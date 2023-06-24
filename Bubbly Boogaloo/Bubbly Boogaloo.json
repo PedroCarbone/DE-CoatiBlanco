@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Menu",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -8,21 +8,23 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.example.platformer",
     "pixelsRounding": false,
     "projectUuid": "fa4ac0c7-4bbe-4316-ae25-c6510fb39299",
-    "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
     "templateSlug": "platformer",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Bubble Bogaloo",
     "description": "An example of a basic platformer (Mario-like) game. Jump around and collect as many coins as you can!",
     "author": "",
-    "windowWidth": 960,
-    "windowHeight": 540,
+    "windowWidth": 1280,
+    "windowHeight": 720,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -956,6 +958,338 @@
         "name": "assets\\gui\\Thumbstick Boundary_Dark160.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Idle .png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Idle .png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Idle1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Walk1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Walk2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Jump1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Jump1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Fall1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Fall2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Fall3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Fall3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Fall4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Fall4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Shoot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Shoot.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\title.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/bub.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Menu/bub.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Menu\\bub.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/bob.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Menu/bob.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Menu\\bob.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/tabla_periodica.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\tabla_periodica.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/walter_white.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\walter_white.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Add Buttons_Blank.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Add Buttons_Blank.png\",\"extension\":\".png\"}",
+        "name": "Add Buttons_Blank.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/UI/d06d857fa3b10cd9f00df25ea1bda5aac9dba7ee433ec3264652b4f43868761e_Add Buttons_Blank.png",
+          "name": "Add Buttons_Blank.png"
+        }
+      },
+      {
+        "file": "assets/NotoSansJP-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "3eefe5c0470c2012c61fa8d0a367974064444fc0c76731426f9df5d93f680701_NotoSansJP-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/3eefe5c0470c2012c61fa8d0a367974064444fc0c76731426f9df5d93f680701_NotoSansJP-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/kenvector_future.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Neonderthaw-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "4da37be27ea4962f6c793e7a37e056d2a9e2c0cbcb88c782f116346b7bdc04e7_Neonderthaw-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/4da37be27ea4962f6c793e7a37e056d2a9e2c0cbcb88c782f116346b7bdc04e7_Neonderthaw-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/MPLUS1p-Thin.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fb2c26ad0e4883807fe0d285cbc0afc6f7888286316aca8023e700007df130b7_MPLUS1p-Thin.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Google Fonts/Japanese/fb2c26ad0e4883807fe0d285cbc0afc6f7888286316aca8023e700007df130b7_MPLUS1p-Thin.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "BubblyBogaloo_Assets/Menu/font.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blank.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Blank.png\"}",
+        "name": "Blank",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Add Buttons_Blank2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Add Buttons_Blank2.png\",\"extension\":\".png\"}",
+        "name": "d06d857fa3b10cd9f00df25ea1bda5aac9dba7ee433ec3264652b4f43868761e_Add Buttons_Blank.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/UI/d06d857fa3b10cd9f00df25ea1bda5aac9dba7ee433ec3264652b4f43868761e_Add Buttons_Blank.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/perrito_ansiedadjpg.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\perrito_ansiedadjpg.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Debuff Arrow 2_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Debuff Arrow 2_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Buffs & Debuffs/d3300bf4438a730976c25e7a7058023b2897640baf3a0355554565f7d7909cc4_Debuff Arrow 2_No Shadow.png",
+          "name": "Debuff Arrow 2_No Shadow.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Debuff Arrow 2_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Debuff Arrow 2_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Buffs & Debuffs/cfc2d8113c4962b6d4dc3e42dfed56afcbfa21d8bd265110ab1de8aaf8015baf_Debuff Arrow 2_Shadow.png",
+          "name": "Debuff Arrow 2_Shadow.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Remove Button_Blank.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "d2dd6ae29a5a2555a15e7bcfd461794a0b38fa9174b5b853293e1c56852ef467_Remove Button_Blank.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/UI/d2dd6ae29a5a2555a15e7bcfd461794a0b38fa9174b5b853293e1c56852ef467_Remove Button_Blank.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/green_button_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\green_button_idle.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/green_button_hovered.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Menu/green_button_hovered.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Menu\\green_button_hovered.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/red_button_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\red_button_idle.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/red_button_hovered.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Menu/red_button_hovered.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/boobleswebp.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\boobleswebp.webp",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Menu/boobles2.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\boobles2.webp",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -970,6 +1304,972 @@
     }
   ],
   "layouts": [
+    {
+      "b": 229,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Menu",
+      "name": "Menu",
+      "r": 236,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 180,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.7053809869542479,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 463,
+          "layer": "",
+          "name": "Title",
+          "persistentUuid": "af043ed3-2b59-45d0-932d-8a073f061d61",
+          "width": 640,
+          "x": 334,
+          "y": 30,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 270,
+          "layer": "",
+          "name": "Bub",
+          "persistentUuid": "c151c9e6-597b-43b8-a948-c4fbae731ee3",
+          "width": 300,
+          "x": 37,
+          "y": 410,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 300,
+          "layer": "",
+          "name": "Bob",
+          "persistentUuid": "5d605d2f-2d66-40dc-8b0e-54435986d62e",
+          "width": 300,
+          "x": 956,
+          "y": 398,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 711,
+          "layer": "",
+          "name": "Tabla",
+          "persistentUuid": "8bcedfcd-c460-4a44-977d-7276ef0d0552",
+          "width": 1141,
+          "x": 79,
+          "y": 11,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 387,
+          "layer": "",
+          "name": "Walter_white",
+          "persistentUuid": "92314b03-e3b0-4160-80e2-efd2cf7ead38",
+          "width": 199,
+          "x": 551,
+          "y": 314,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 93,
+          "layer": "",
+          "name": "AddButtons",
+          "persistentUuid": "3b2a8424-a688-4840-8711-ecfd6e100142",
+          "width": 225,
+          "x": 322,
+          "y": 558,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 93,
+          "layer": "",
+          "name": "AddButtons",
+          "persistentUuid": "e749d5a7-9066-4c50-b361-96c0915f18a1",
+          "width": 225,
+          "x": 716,
+          "y": 558,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 47,
+          "layer": "",
+          "name": "play",
+          "persistentUuid": "28bbc173-96a9-4d7f-8046-5aafcb5a45cf",
+          "width": 173,
+          "x": 355,
+          "y": 573,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "play_button",
+          "persistentUuid": "3485765d-52b2-4ccb-aa16-2f572dfc23ae",
+          "width": 201,
+          "x": 338,
+          "y": 537,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 107,
+          "layer": "",
+          "name": "exit_button",
+          "persistentUuid": "5c034e7d-99fc-400d-8d73-5f813effc012",
+          "width": 201,
+          "x": 747,
+          "y": 537,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "exit",
+          "persistentUuid": "5e0f51ff-f4de-4e5a-8eea-9c542fdd9f58",
+          "width": 0,
+          "x": 769,
+          "y": 572,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 354,
+          "customSize": true,
+          "depth": 0,
+          "height": 365,
+          "layer": "",
+          "name": "boobles2",
+          "persistentUuid": "b7172cfd-81ab-4f6e-8963-f1778ae2837b",
+          "width": 254,
+          "x": 983,
+          "y": -108,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 28,
+          "customSize": true,
+          "depth": 0,
+          "height": 274,
+          "layer": "",
+          "name": "boobles2",
+          "persistentUuid": "069b892b-605f-4ba1-988d-0d0e8796355b",
+          "width": 191,
+          "x": 248,
+          "y": 327,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 106,
+          "customSize": true,
+          "depth": 0,
+          "height": 308,
+          "layer": "",
+          "name": "boobles2",
+          "persistentUuid": "c0d8cd54-08f6-4cdf-b389-4d2b7c553c5e",
+          "width": 215,
+          "x": 74,
+          "y": 42,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 28,
+          "customSize": true,
+          "depth": 0,
+          "height": 206,
+          "layer": "",
+          "name": "boobles2",
+          "persistentUuid": "e77eaf32-aced-4039-8ec2-688c665ee3f4",
+          "width": 143,
+          "x": 786,
+          "y": 381,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "Title",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\title.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Bub",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "BubblyBogaloo_Assets\\Menu\\bub",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\bub.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Bob",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "BubblyBogaloo_Assets\\Menu\\bob",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\bob.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Tabla",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\tabla_periodica.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Walter_white",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\walter_white.webp",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
+          "name": "play_button",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.00001,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Menu\\green_button_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 11,
+                            "y": 1
+                          },
+                          {
+                            "x": 11,
+                            "y": 12
+                          },
+                          {
+                            "x": 0,
+                            "y": 12
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\green_button_hovered.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
+          "name": "exit_button",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Menu\\red_button_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 11,
+                            "y": 1
+                          },
+                          {
+                            "x": 11,
+                            "y": 12
+                          },
+                          {
+                            "x": 0,
+                            "y": 12
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "play",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "PLAY",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "exit",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "EXIT",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "boobles2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "burbujas2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\boobles2.webp",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "play_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "exit_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Exit\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "play_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "play_button",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "play_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "play_button",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "exit_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "exit_button",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "exit_button",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "exit_button",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        }
+      ]
+    },
     {
       "b": 26,
       "disableInputWhenNotFocused": true,
@@ -990,7 +2290,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5751709533766688,
+        "zoomFactor": 1.1164983803808393,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1089,11 +2389,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 95.86380004882812,
+          "depth": 0,
+          "height": 96,
           "layer": "",
           "name": "Player",
           "persistentUuid": "531d1c3f-aae2-413f-ba87-81f0b6673f1b",
-          "width": 72.77617645263672,
+          "width": 104,
           "x": 221,
           "y": 147,
           "zOrder": 6,
@@ -1714,8 +3015,8 @@
           "name": "Joystick",
           "persistentUuid": "fcbc25c5-15d6-4b85-a6ec-08b9140c8cb7",
           "width": 160,
-          "x": 144,
-          "y": 432,
+          "x": 161,
+          "y": 437,
           "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
@@ -1746,8 +3047,8 @@
               "IdleAnimationName": "Idle",
               "MoveAnimationName": "Move",
               "JumpAnimationName": "Jump",
-              "FallAnimationName": "Fall",
-              "ClimbAnimationName": "Climb",
+              "FallAnimationName": "Dead",
+              "ClimbAnimationName": "",
               "PlatformerBehavior": "PlatformerObject",
               "RunAnimationName": "Run"
             },
@@ -1851,11 +3152,11 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.17,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Idle_1.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Idle .png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1871,27 +3172,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Idle_2.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Idle1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1907,92 +3208,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Idle_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Idle_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
@@ -2011,7 +3240,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_1.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Walk1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2027,27 +3256,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_2.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Walk2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2063,632 +3292,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_10.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_11.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_12.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_13.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_14.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_15.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_16.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_17.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_18.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Run_19.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
@@ -2707,7 +3324,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Jump.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Jump1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2723,20 +3340,56 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Player\\Jump2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 18,
+                            "y": 0
+                          },
+                          {
+                            "x": 18,
+                            "y": 18
+                          },
+                          {
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
@@ -2746,16 +3399,16 @@
               ]
             },
             {
-              "name": "Climb",
+              "name": "Death",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.03999999910593033,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_1.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Fall1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2771,27 +3424,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_2.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Fall2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2807,27 +3460,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_3.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Fall3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2843,27 +3496,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_4.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Fall4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2879,308 +3532,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_6.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_7.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_9.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_10.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_11.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Climb_12.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 124.5,
-                            "y": 182
-                          },
-                          {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
@@ -3190,7 +3555,7 @@
               ]
             },
             {
-              "name": "Fall",
+              "name": "Shoot",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3199,7 +3564,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Red hero_Fall.png",
+                      "image": "BubblyBogaloo_Assets\\Player\\Shoot.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3215,20 +3580,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 20.5,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 22
+                            "x": 18,
+                            "y": 0
                           },
                           {
-                            "x": 124.5,
-                            "y": 182
+                            "x": 18,
+                            "y": 18
                           },
                           {
-                            "x": 20.5,
-                            "y": 182
+                            "x": 0,
+                            "y": 18
                           }
                         ]
                       ]
@@ -6517,6 +6882,16 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Player",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Player::TriggerDeath"
                       },
                       "parameters": [
@@ -6656,6 +7031,15 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Death\""
+                          ]
+                        },
                         {
                           "type": {
                             "value": "Player::TriggerDeath"
@@ -7689,6 +8073,751 @@
           "type": "Tween::TweenBehavior"
         }
       ]
+    },
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Exit",
+      "name": "Exit",
+      "r": 255,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 255,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.7370816317994034,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 391,
+          "layer": "",
+          "name": "perrito_ansiedad",
+          "persistentUuid": "9287a1be-2e74-42e7-8d3e-46d3c10db2f4",
+          "width": 369,
+          "x": 425,
+          "y": 257,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 52,
+          "layer": "",
+          "name": "Texto",
+          "persistentUuid": "6b687314-d268-40ae-b61f-5da6fb25dbcd",
+          "width": 869,
+          "x": 153,
+          "y": 46,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 266,
+          "customSize": true,
+          "depth": 0,
+          "height": 269,
+          "layer": "",
+          "name": "DebuffArrow2",
+          "persistentUuid": "74b4e0a9-ab1d-41a4-b257-3de998197227",
+          "width": 269,
+          "x": 999,
+          "y": 8,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 21,
+          "layer": "",
+          "name": "Texto2",
+          "persistentUuid": "ba95cc28-6b60-4fc7-adfe-05dcd3080f07",
+          "width": 417,
+          "x": 411,
+          "y": 665,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 21,
+          "layer": "",
+          "name": "texto3",
+          "persistentUuid": "dcf38681-bb19-4868-833f-985e5b569086",
+          "width": 383,
+          "x": 878,
+          "y": 274,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "exit",
+          "persistentUuid": "762c91d0-42e2-4439-b5c0-420297a1b41c",
+          "width": 229,
+          "x": 1000,
+          "y": 615,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 121,
+          "layer": "",
+          "name": "exit2",
+          "persistentUuid": "648dfcbe-7bf6-4d03-928b-32ff047a09a2",
+          "width": 301,
+          "x": 965,
+          "y": 587,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 121,
+          "layer": "",
+          "name": "Back",
+          "persistentUuid": "faf7f3e9-6733-4e06-beff-85f67b3611f2",
+          "width": 301,
+          "x": 33,
+          "y": 587,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "back",
+          "persistentUuid": "241b4e61-12dc-4fee-85f2-4ece6711c6ed",
+          "width": 0,
+          "x": 88,
+          "y": 625,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "perrito_ansiedad",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\perrito_ansiedadjpg.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Texto",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "No encontramos como crear la acción de cerrar ventana",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "e096e2982f5d55c556524503932210b054cc495c2e6f233bedaa026c58606b24",
+          "name": "DebuffArrow2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "No Shadow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Debuff Arrow 2_No Shadow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 1
+                          },
+                          {
+                            "x": 27,
+                            "y": 1
+                          },
+                          {
+                            "x": 27,
+                            "y": 27
+                          },
+                          {
+                            "x": 3,
+                            "y": 27
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Texto2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Era esto o hacer crashear el juego",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "texto3",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Me clickeas? uwu",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 25,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "exit",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "ACÁ LO ENCONTRAMOS xD",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "back",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "BACK",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "exit2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\red_button_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Back",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\green_button_idle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Menu\\green_button_hovered.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "exit2",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "exit2",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "exit2",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "exit2",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "exit2",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "Back",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "Back",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Back",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "ButtonStates::ButtonFSM::IsHovered"
+              },
+              "parameters": [
+                "Back",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Back",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        }
+      ]
     }
   ],
   "externalEvents": [],
@@ -7697,13 +8826,1223 @@
       "author": "",
       "category": "User interface",
       "extensionNamespace": "",
+      "fullName": "Button States",
+      "helpPath": "/objects/button",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWdlc3R1cmUtdGFwLWJ1dHRvbiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMyA1QzE1LjIxIDUgMTcgNi43OSAxNyA5QzE3IDEwLjUgMTYuMiAxMS43NyAxNSAxMi40NlYxMS4yNEMxNS42MSAxMC42OSAxNiA5Ljg5IDE2IDlDMTYgNy4zNCAxNC42NiA2IDEzIDZTMTAgNy4zNCAxMCA5QzEwIDkuODkgMTAuMzkgMTAuNjkgMTEgMTEuMjRWMTIuNDZDOS44IDExLjc3IDkgMTAuNSA5IDlDOSA2Ljc5IDEwLjc5IDUgMTMgNU0yMCAyMC41QzE5Ljk3IDIxLjMyIDE5LjMyIDIxLjk3IDE4LjUgMjJIMTNDMTIuNjIgMjIgMTIuMjYgMjEuODUgMTIgMjEuNTdMOCAxNy4zN0w4Ljc0IDE2LjZDOC45MyAxNi4zOSA5LjIgMTYuMjggOS41IDE2LjI4SDkuN0wxMiAxOFY5QzEyIDguNDUgMTIuNDUgOCAxMyA4UzE0IDguNDUgMTQgOVYxMy40N0wxNS4yMSAxMy42TDE5LjE1IDE1Ljc5QzE5LjY4IDE2LjAzIDIwIDE2LjU2IDIwIDE3LjE0VjIwLjVNMjAgMkg0QzIuOSAyIDIgMi45IDIgNFYxMkMyIDEzLjExIDIuOSAxNCA0IDE0SDhWMTJMNCAxMkw0IDRIMjBMMjAgMTJIMThWMTRIMjBWMTMuOTZMMjAuMDQgMTRDMjEuMTMgMTQgMjIgMTMuMDkgMjIgMTJWNEMyMiAyLjkgMjEuMTEgMiAyMCAyWiIgLz48L3N2Zz4=",
+      "name": "ButtonStates",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/753a9a794bd885058159b7509f06f5a8f67f72decfccb9a1b0efee26f41c3c4c_gesture-tap-button.svg",
+      "shortDescription": "Use any object as a button.",
+      "version": "1.0.0",
+      "description": [
+        "Tracks player interaction with an object, including:",
+        "- hovered",
+        "- pressed",
+        "- clicked"
+      ],
+      "origin": {
+        "identifier": "ButtonStates",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "ui",
+        "button",
+        "fsm"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Use objects as buttons.",
+          "fullName": "Button states",
+          "name": "ButtonFSM",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Finite state machine",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "The \"Validated\" state only last one frame."
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ButtonStates::ButtonFSM::PropertyState"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"Validated\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"Idle\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Check position",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Make sure the cursor position is only checked once per frame."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyShouldCheckHovering"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "Object",
+                                "MouseOnlyCursorX(Object.Layer(), 0)",
+                                "MouseOnlyCursorY(Object.Layer(), 0)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyTouchId"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "!=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "Object",
+                                "TouchX(Object.Behavior::PropertyTouchId(), Object.Layer(), 0)",
+                                "TouchY(Object.Behavior::PropertyTouchId(), Object.Layer(), 0)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Handle touch start",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "HasAnyTouchOrMouseStarted"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyIndex"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Repeat",
+                              "repeatExpression": "StartedTouchOrMouseCount()",
+                              "conditions": [],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "CollisionPoint"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "TouchX(StartedTouchOrMouseId(Object.Behavior::PropertyIndex()), Object.Layer(), 0)",
+                                        "TouchY(StartedTouchOrMouseId(Object.Behavior::PropertyIndex()), Object.Layer(), 0)"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ButtonStates::ButtonFSM::SetPropertyTouchId"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "=",
+                                        "StartedTouchOrMouseId(Object.Behavior::PropertyIndex())"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ButtonStates::ButtonFSM::SetPropertyTouchIsInside"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "yes"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                                              },
+                                              "parameters": [
+                                                "Object",
+                                                "Behavior",
+                                                "=",
+                                                "\"Hovered\""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                                              },
+                                              "parameters": [
+                                                "Object",
+                                                "Behavior",
+                                                "=",
+                                                "\"Idle\""
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                                          },
+                                          "parameters": [
+                                            "Object",
+                                            "Behavior",
+                                            "=",
+                                            "\"PressedInside\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ButtonStates::ButtonFSM::SetPropertyIndex"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "+",
+                                        "1"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Apply position changes",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ButtonStates::ButtonFSM::PropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ButtonStates::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Handle touch end",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "HasTouchEnded"
+                              },
+                              "parameters": [
+                                "",
+                                "Object.Behavior::PropertyTouchId()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ButtonStates::ButtonFSM::SetPropertyTouchId"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "ButtonStates::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"PressedInside\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Validated\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "ButtonStates::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"PressedInside\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "ButtonStates::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Validated\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Idle\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDeActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::ResetState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Reset the state of the button.",
+              "fullName": "Reset state",
+              "functionType": "Action",
+              "name": "ResetState",
+              "private": true,
+              "sentence": "Reset the button state of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::SetPropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::SetPropertyTouchId"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is not used.",
+              "fullName": "Is idle",
+              "functionType": "Condition",
+              "name": "IsIdle",
+              "sentence": "_PARAM0_ is idle",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button was just clicked.",
+              "fullName": "Is clicked",
+              "functionType": "Condition",
+              "name": "IsClicked",
+              "sentence": "_PARAM0_ is clicked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Validated\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the cursor is hovered over the button.",
+              "fullName": "Is hovered",
+              "functionType": "Condition",
+              "name": "IsHovered",
+              "sentence": "_PARAM0_ is hovered",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Hovered\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is either hovered or pressed but not hovered.",
+              "fullName": "Is focused",
+              "functionType": "Condition",
+              "name": "IsFocused",
+              "sentence": "_PARAM0_ is focused",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Hovered\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedOutside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is currently being pressed with mouse or touch.",
+              "fullName": "Is pressed",
+              "functionType": "Condition",
+              "name": "IsPressed",
+              "sentence": "_PARAM0_ is pressed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedInside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is currently being pressed outside with mouse or touch.",
+              "fullName": "Is held outside",
+              "functionType": "Condition",
+              "name": "IsPressedOutside",
+              "sentence": "_PARAM0_ is held outside",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ButtonStates::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedOutside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the touch id that is using the button or 0 if none.",
+              "fullName": "Touch id",
+              "functionType": "ExpressionAndCondition",
+              "name": "TouchId",
+              "sentence": "the touch id",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyTouchId()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ButtonStates::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "",
+              "description": "Should check hovering",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "ShouldCheckHovering"
+            },
+            {
+              "value": "Idle",
+              "type": "Choice",
+              "label": "State",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "Idle",
+                "Hovered",
+                "PressedInside",
+                "PressedOutside",
+                "Validated"
+              ],
+              "hidden": true,
+              "name": "State"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Touch id",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TouchId"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Touch is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TouchIsInside"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Mouse is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "MouseIsInside"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Index"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "",
+      "category": "User interface",
+      "extensionNamespace": "",
       "fullName": "Panel sprite button",
-      "helpPath": "",
+      "helpPath": "/objects/button",
       "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI5LDIzSDNjLTEuMSwwLTItMC45LTItMlYxMWMwLTEuMSwwLjktMiwyLTJoMjZjMS4xLDAsMiwwLjksMiwydjEwQzMxLDIyLjEsMzAuMSwyMywyOSwyM3oiLz4NCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMywxOUwxMywxOWMtMS4xLDAtMi0wLjktMi0ydi0yYzAtMS4xLDAuOS0yLDItMmgwYzEuMSwwLDIsMC45LDIsMnYyQzE1LDE4LjEsMTQuMSwxOSwxMywxOXoiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIxOCIgeTE9IjEzIiB4Mj0iMTgiIHkyPSIxOSIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjIxIiB5MT0iMTMiIHgyPSIxOCIgeTI9IjE3Ii8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMjEiIHkxPSIxOSIgeDI9IjE5IiB5Mj0iMTYiLz4NCjwvc3ZnPg0K",
       "name": "PanelSpriteButton",
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Interface Elements/Interface Elements_interface_ui_button_ok_cta_clock_tap.svg",
       "shortDescription": "A button that can be customized.",
-      "version": "1.3.0",
+      "version": "1.4.4",
       "description": [
         "The button can be customized with a background for each state and a label. It handles user interactions and a simple condition can be used to check if it is clicked.",
         "",
@@ -8105,73 +10444,26 @@
                             },
                             {
                               "type": {
-                                "inverted": true,
-                                "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyState"
                               },
                               "parameters": [
                                 "Object",
-                                "Behavior"
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
                               ]
                             }
                           ],
-                          "actions": [],
-                          "events": [
+                          "actions": [
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"Hovered\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"Idle\""
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"PressedInside\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"PressedOutside\""
-                                  ]
-                                }
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
                               ]
                             }
                           ]
@@ -8181,99 +10473,112 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::Or"
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyMouseIsInside"
                               },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyMouseIsInside"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior"
-                                  ]
-                                }
-                              ]
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"PressedOutside\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"PressedInside\""
-                                  ]
-                                }
+                              "parameters": [
+                                "Object",
+                                "Behavior"
                               ]
                             },
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "MouseButtonPressed"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Left"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::PropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"Idle\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
-                                  },
-                                  "parameters": [
-                                    "Object",
-                                    "Behavior",
-                                    "=",
-                                    "\"Hovered\""
-                                  ]
-                                }
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
                               ]
                             }
                           ]
@@ -8395,6 +10700,96 @@
                     }
                   ],
                   "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PanelSpriteButton::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDeActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::ButtonFSM::ResetState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PanelSpriteButton::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Reset the state of the button.",
+              "fullName": "Reset state",
+              "functionType": "Action",
+              "name": "ResetState",
+              "private": true,
+              "sentence": "Reset the button state of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::ButtonFSM::SetPropertyTouchId"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": [
@@ -8731,6 +11126,46 @@
                 }
               ],
               "objectGroups": []
+            },
+            {
+              "description": "the touch id that is using the button or 0 if none.",
+              "fullName": "Touch id",
+              "functionType": "ExpressionAndCondition",
+              "name": "TouchId",
+              "sentence": "the touch id",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyTouchId()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PanelSpriteButton::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -8808,7 +11243,7 @@
         {
           "defaultName": "Button",
           "description": "A button that can be customized.",
-          "fullName": "Panel sprite button",
+          "fullName": "Button (panel sprite)",
           "name": "PanelSpriteButton",
           "eventsFunctions": [
             {
@@ -9786,7 +12221,7 @@
                   "type": "object"
                 },
                 {
-                  "description": "",
+                  "description": "Text",
                   "name": "LabelText",
                   "type": "string"
                 }
@@ -9979,6 +12414,122 @@
                   ]
                 }
               ]
+            },
+            {
+              "description": "De/activate interactions with the button.",
+              "fullName": "De/activate interactions",
+              "functionType": "Action",
+              "name": "Activate",
+              "sentence": "Activate interactions with _PARAM0_: _PARAM1_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"ShouldActivate\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Idle",
+                        "ButtonFSM",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"ShouldActivate\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Idle",
+                        "ButtonFSM",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PanelSpriteButton::PanelSpriteButton",
+                  "type": "object"
+                },
+                {
+                  "description": "Activate",
+                  "name": "ShouldActivate",
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if interactions are activated on the button.",
+              "fullName": "Interactions activated",
+              "functionType": "Condition",
+              "name": "IsActivated",
+              "sentence": "Interactions on _PARAM0_ are activated",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BehaviorActivated"
+                      },
+                      "parameters": [
+                        "Idle",
+                        "ButtonFSM"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PanelSpriteButton::PanelSpriteButton",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
             }
           ],
           "propertyDescriptors": [
@@ -32627,11 +35178,16 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": [
             {
-              "description": "",
+              "description": "Dead",
               "name": "Player",
               "supplementaryInformation": "Sprite",
               "type": "objectList"
