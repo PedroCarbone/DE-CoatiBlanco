@@ -3071,7 +3071,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5564086693854842,
+        "zoomFactor": 0.6789100437066673,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3149,6 +3149,12 @@
           "name": "Score",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Life",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -3216,13 +3222,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 43.66571044921875,
+          "depth": 0,
+          "height": 44,
           "layer": "UI",
           "name": "ScoreText",
           "persistentUuid": "85c756df-5168-4a9b-954d-3f1a66a4b173",
-          "width": 247.33441162109375,
-          "x": 13.66558837890625,
-          "y": 12.565789222717285,
+          "width": 424,
+          "x": 17,
+          "y": 39,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -3802,6 +3809,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "Life",
+          "persistentUuid": "b1c417e7-6771-41eb-a950-5feaddd7443d",
+          "width": 0,
+          "x": 57,
+          "y": 94,
+          "zOrder": 64,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3882,9 +3904,9 @@
               "JumpButton": "A"
             },
             {
-              "ignoreDefaultControls": false,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "ignoreDefaultControls": false,
               "canGoDownFromJumpthru": true,
               "acceleration": 1125,
               "deceleration": 1125,
@@ -6460,7 +6482,7 @@
           "effects": [],
           "behaviors": [],
           "string": "Score: 0",
-          "font": "PTSans-Bold.ttf",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "",
           "characterSize": 40,
           "color": {
@@ -7158,6 +7180,35 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Life",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "Variable",
+              "type": "number",
+              "value": 3
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "string": "Life: 0",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -7178,7 +7229,6 @@
           "colorG": 16,
           "colorR": 189,
           "creationTime": 0,
-          "folded": true,
           "name": "Controlling the character",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7200,7 +7250,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Mobile Touchscreen Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7631,7 +7680,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Collect coins",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7706,7 +7754,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Player death",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7740,12 +7787,11 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ChangeAnimation"
+                        "value": "SetAnimationName"
                       },
                       "parameters": [
                         "Player",
-                        "=",
-                        "3"
+                        "\"Death\""
                       ]
                     },
                     {
@@ -7756,6 +7802,16 @@
                         "",
                         "Player",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Life",
+                        "-",
+                        "1"
                       ]
                     }
                   ]
@@ -7907,6 +7963,16 @@
                             "Player",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "Life",
+                            "-",
+                            "1"
+                          ]
                         }
                       ]
                     }
@@ -7916,10 +7982,72 @@
               "parameters": []
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Enemy::IsFlyDead"
+                  },
+                  "parameters": [
+                    "",
+                    "Fly",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Fly",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Enemy::TriggerFlyDeath"
+                  },
+                  "parameters": [
+                    "",
+                    "Fly",
+                    "RectangleMovement",
+                    "ShakeObject_PositionAngle",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Cleanup objects",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8014,7 +8142,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "The player always dies when the ennemy is on fire."
+                      "comment": "The player always dies when the enemy is on fire."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -8039,6 +8167,25 @@
                             "",
                             "Player",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Death\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "Life",
+                            "-",
+                            "1"
                           ]
                         }
                       ]
@@ -8117,34 +8264,68 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "PlatformBehavior::IsFalling"
-                              },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Player::TriggerDeath"
-                              },
-                              "parameters": [
-                                "",
-                                "Player",
-                                ""
-                              ]
-                            }
-                          ]
                         }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Enemy::IsFlyDead"
+                      },
+                      "parameters": [
+                        "",
+                        "Monster",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "Monster",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Enemy::TriggerFlyDeath"
+                      },
+                      "parameters": [
+                        "",
+                        "Monster",
+                        "RectangleMovement",
+                        "ShakeObject_PositionAngle",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Score",
+                        "+",
+                        "50"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        ""
                       ]
                     }
                   ]
@@ -8703,7 +8884,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Display current score",
+              "name": "UI",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -8719,6 +8900,41 @@
                         "ScoreText",
                         "=",
                         "\"Score: \" + VariableString(Score)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Life",
+                        "=",
+                        "\"Life: \" + VariableString(Life) + \"/3\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Life",
+                        "=",
+                        "3"
                       ]
                     }
                   ]
@@ -8801,6 +9017,17 @@
               "parameters": []
             }
           ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Shooting",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
           "parameters": []
         },
         {
