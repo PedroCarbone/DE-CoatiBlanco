@@ -3071,7 +3071,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6789100437066673,
+        "zoomFactor": 0.5382584178665567,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3110,16 +3110,10 @@
               "name": "EndScreenBackground"
             },
             {
-              "name": "EndScreenHeader"
+              "name": "EndScreenHeaderWin"
             },
             {
               "name": "EndScreenSubHeader"
-            },
-            {
-              "name": "EndScreenBestText"
-            },
-            {
-              "name": "EndScreenChallengeText"
             },
             {
               "name": "EndScreenRetryText"
@@ -3455,11 +3449,11 @@
           "customSize": true,
           "height": 64,
           "layer": "EndScreen",
-          "name": "EndScreenHeader",
+          "name": "EndScreenHeaderWin",
           "persistentUuid": "c03452a3-fa60-4caf-ab47-5937f5901d65",
           "width": 960,
           "x": 0,
-          "y": 96,
+          "y": 172,
           "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
@@ -3474,7 +3468,7 @@
           "persistentUuid": "ea6070e8-fa79-455e-ae65-b4ced4c3c1d3",
           "width": 960,
           "x": 0,
-          "y": 182,
+          "y": 325,
           "zOrder": 49,
           "numberProperties": [],
           "stringProperties": [],
@@ -3708,36 +3702,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 48,
-          "layer": "EndScreen",
-          "name": "EndScreenChallengeText",
-          "persistentUuid": "35a4ffe7-bc41-49f0-a38b-ec169463f92f",
-          "width": 960,
-          "x": 0,
-          "y": 302,
-          "zOrder": 53,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 48,
-          "layer": "EndScreen",
-          "name": "EndScreenBestText",
-          "persistentUuid": "577f8640-7272-417e-9b19-926a4fab6f5a",
-          "width": 960,
-          "x": 0,
-          "y": 302,
-          "zOrder": 54,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 928,
           "layer": "",
           "name": "RightBoundary",
@@ -3782,14 +3746,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 100,
           "layer": "EndScreen",
           "name": "RetryButton",
           "persistentUuid": "28e490c3-6951-4014-93c6-35648cb3160c",
-          "width": 0,
+          "width": 261,
           "x": 384,
-          "y": 389,
+          "y": 439,
           "zOrder": 61,
           "numberProperties": [],
           "stringProperties": [],
@@ -3821,6 +3786,21 @@
           "x": 57,
           "y": 94,
           "zOrder": 64,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "EndScreen",
+          "name": "EndScreenHeaderFail",
+          "persistentUuid": "65c38ca8-8314-4cec-b9f6-2d920e5fc141",
+          "width": 0,
+          "x": 466,
+          "y": 172,
+          "zOrder": 65,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6787,9 +6767,9 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
+          "bold": true,
           "italic": false,
-          "name": "EndScreenHeader",
+          "name": "EndScreenHeaderWin",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -6798,9 +6778,9 @@
           "effects": [],
           "behaviors": [],
           "string": "Congratulations!",
-          "font": "PTSans-Bold.ttf",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
@@ -6809,7 +6789,29 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
+          "bold": true,
+          "italic": false,
+          "name": "EndScreenHeaderFail",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "You lose!",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
           "italic": false,
           "name": "EndScreenSubHeader",
           "smoothed": true,
@@ -6820,51 +6822,7 @@
           "effects": [],
           "behaviors": [],
           "string": "You got 100 points!",
-          "font": "PTSans-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": true,
-          "name": "EndScreenBestText",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "You got the highest number of points!",
-          "font": "PTSans-Bold.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": true,
-          "name": "EndScreenChallengeText",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Can you get 950 points?",
-          "font": "PTSans-Bold.ttf",
+          "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -6909,33 +6867,33 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
+            "LeftPadding": 0,
+            "RightPadding": 0,
             "PressedLabelOffsetY": 3,
-            "BottomPadding": 24,
-            "TopPadding": 16,
+            "BottomPadding": 0,
+            "TopPadding": 0,
             "HoveredFadeOutDuration": 0.25
           },
           "childrenContent": {
             "Hovered": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Purple Button With Shadow_Hovered.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
             },
             "Idle": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Purple Button With Shadow_Idle.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\red_button_idle.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
             },
             "Label": {
               "bold": false,
@@ -6943,7 +6901,7 @@
               "smoothed": true,
               "underlined": false,
               "string": "Retry",
-              "font": "CantoraOne-Regular.ttf",
+              "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
               "textAlignment": "center",
               "characterSize": 40,
               "color": {
@@ -6953,14 +6911,14 @@
               }
             },
             "Pressed": {
-              "bottomMargin": 16,
-              "height": 69,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Purple Button With Shadow_Pressed.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 192
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
             }
           }
         },
@@ -8404,6 +8362,7 @@
               "comment": "Detect when the player reaches the door"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8433,6 +8392,14 @@
                   "parameters": [
                     "",
                     "\"EndScreen\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "EndScreenHeaderFail"
                   ]
                 }
               ],
@@ -8492,6 +8459,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8569,16 +8537,7 @@
                               ]
                             }
                           ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Cache"
-                              },
-                              "parameters": [
-                                "EndScreenBestText"
-                              ]
-                            }
-                          ]
+                          "actions": []
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -8594,16 +8553,7 @@
                               ]
                             }
                           ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Cache"
-                              },
-                              "parameters": [
-                                "EndScreenChallengeText"
-                              ]
-                            }
-                          ]
+                          "actions": []
                         }
                       ]
                     },
@@ -9027,207 +8977,24 @@
           "name": "Shooting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "shooting",
-                "False"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "shooting",
-                "True"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "z"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "Player",
-                "\"Shoot\""
-              ]
-            }
-          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "SceneVariableAsBoolean"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
-                    "shooting",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "shooting",
-                    "True"
+                    "",
+                    "Right"
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "FireBullet::FireBullet::Fire"
-                  },
-                  "parameters": [
-                    "Player",
-                    "FireBullet",
-                    "Player.X()",
-                    "Player.Y()",
-                    "Bullet",
-                    "0",
-                    "400",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FireBullet::FireBullet::Fire"
-                  },
-                  "parameters": [
-                    "Player",
-                    "FireBullet",
-                    "Player.X()",
-                    "Player.Y()",
-                    "Bullet",
-                    "180",
-                    "400",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimationName"
-              },
-              "parameters": [
-                "Player",
-                "\"Shoot\""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimationEnded2"
-              },
-              "parameters": [
-                "Player"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "Player",
-                "\"Idle\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimationName"
-              },
-              "parameters": [
-                "Player",
-                "\"Shoot\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
+                    "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "shooting",
@@ -9237,51 +9004,22 @@
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "Player",
-                "FireBullet",
-                "Player.X()",
-                "Player.Y()",
-                "Bullet",
-                "0",
-                "400",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimationName"
-              },
-              "parameters": [
-                "Player",
-                "\"Shoot\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "SceneVariableAsBoolean"
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
                     "shooting",
@@ -9291,29 +9029,308 @@
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "Player",
-                "FireBullet",
-                "Player.X()",
-                "Player.Y()",
-                "Bullet",
-                "180",
-                "400",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Shoot\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "shooting",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "shooting",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y()",
+                        "Bullet",
+                        "0",
+                        "400",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y()",
+                        "Bullet",
+                        "180",
+                        "400",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Shoot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationEnded2"
+                      },
+                      "parameters": [
+                        "Player"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Shoot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "shooting",
+                            "False"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y()",
+                        "Bullet",
+                        "0",
+                        "400",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"Shoot\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "SceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "shooting",
+                                "True"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::Fire"
+                          },
+                          "parameters": [
+                            "Player",
+                            "FireBullet",
+                            "Player.X()",
+                            "Player.Y()",
+                            "Bullet",
+                            "180",
+                            "400",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Lose screen",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Life",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"EndScreen\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Player",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "EndScreenHeaderWin"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -9388,7 +9405,7 @@
           "isLocked": false,
           "name": "EndScreen",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         }
