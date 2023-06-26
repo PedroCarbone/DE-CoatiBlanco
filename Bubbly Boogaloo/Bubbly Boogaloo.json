@@ -3119,7 +3119,7 @@
               "name": "EndScreenRetryText"
             },
             {
-              "name": "RetryButton"
+              "name": "EndScreenHeaderFail"
             }
           ]
         },
@@ -3432,11 +3432,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 540,
+          "depth": 0,
+          "height": 722,
           "layer": "EndScreen",
           "name": "EndScreenBackground",
           "persistentUuid": "5bb92e8d-5cfb-4d81-90e7-25a7a05accb0",
-          "width": 960,
+          "width": 1278,
           "x": 0,
           "y": 0,
           "zOrder": 45,
@@ -3452,8 +3453,8 @@
           "name": "EndScreenHeaderWin",
           "persistentUuid": "c03452a3-fa60-4caf-ab47-5937f5901d65",
           "width": 960,
-          "x": 0,
-          "y": 172,
+          "x": 158,
+          "y": 145,
           "zOrder": 46,
           "numberProperties": [],
           "stringProperties": [],
@@ -3467,7 +3468,7 @@
           "name": "EndScreenSubHeader",
           "persistentUuid": "ea6070e8-fa79-455e-ae65-b4ced4c3c1d3",
           "width": 960,
-          "x": 0,
+          "x": 158,
           "y": 325,
           "zOrder": 49,
           "numberProperties": [],
@@ -3746,22 +3747,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 32,
-          "height": 100,
-          "layer": "EndScreen",
-          "name": "RetryButton",
-          "persistentUuid": "28e490c3-6951-4014-93c6-35648cb3160c",
-          "width": 261,
-          "x": 384,
-          "y": 439,
-          "zOrder": 61,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 160,
           "layer": "UI",
@@ -3792,15 +3777,48 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 42,
           "layer": "EndScreen",
           "name": "EndScreenHeaderFail",
           "persistentUuid": "65c38ca8-8314-4cec-b9f6-2d920e5fc141",
-          "width": 0,
-          "x": 466,
-          "y": 172,
+          "width": 360,
+          "x": 458,
+          "y": 145,
           "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 100,
+          "layer": "EndScreen",
+          "name": "RetryButton",
+          "persistentUuid": "adadfd35-06d8-4b55-87aa-3df4a29c467c",
+          "width": 261,
+          "x": 274,
+          "y": 433,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 100,
+          "layer": "EndScreen",
+          "name": "Menu",
+          "persistentUuid": "29ebebf3-f8cd-4afc-aa44-1bc9038f3cfa",
+          "width": 261,
+          "x": 743,
+          "y": 439,
+          "zOrder": 66,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6880,6 +6898,70 @@
               "height": 100,
               "leftMargin": 0,
               "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\green_button_hovered.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
+            },
+            "Idle": {
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\green_button_idle.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "RETRY",
+              "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "BubblyBogaloo_Assets\\Menu\\green_button_hovered.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 250
+            }
+          }
+        },
+        {
+          "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
+          "name": "Menu",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 3,
+            "BottomPadding": 0,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 0,
+              "height": 100,
+              "leftMargin": 0,
+              "rightMargin": 0,
               "texture": "BubblyBogaloo_Assets\\Menu\\red_button_hovered.png",
               "tiled": false,
               "topMargin": 0,
@@ -6900,7 +6982,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Retry",
+              "string": "MENU",
               "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
               "textAlignment": "center",
               "characterSize": 40,
@@ -8459,7 +8541,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8633,6 +8714,32 @@
                           "parameters": [
                             "",
                             "CurrentSceneName()",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                          },
+                          "parameters": [
+                            "Menu",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Menu\"",
                             ""
                           ]
                         }
