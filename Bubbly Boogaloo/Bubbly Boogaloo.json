@@ -3206,7 +3206,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0800778004377853,
+        "zoomFactor": 0.44113598384188724,
         "windowMask": false
       },
       "objectsGroups": [
@@ -9904,12 +9904,42 @@
                   "parameters": [
                     "Player",
                     "FireBullet",
-                    "Player.X(\"0\")",
-                    "Player.Y(\"0\")",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
                     "Bullet",
                     "180",
                     "400",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "30",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "-",
+                    "10"
                   ]
                 }
               ]
