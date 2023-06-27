@@ -3188,7 +3188,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0800778004377667,
+        "zoomFactor": 1.3623115632974592,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3294,7 +3294,7 @@
           "name": "Player",
           "persistentUuid": "531d1c3f-aae2-413f-ba87-81f0b6673f1b",
           "width": 78,
-          "x": 194,
+          "x": 205,
           "y": 81,
           "zOrder": 6,
           "numberProperties": [],
@@ -3340,7 +3340,7 @@
           "name": "ScoreText",
           "persistentUuid": "85c756df-5168-4a9b-954d-3f1a66a4b173",
           "width": 424,
-          "x": 17,
+          "x": 37,
           "y": 12,
           "zOrder": 20,
           "numberProperties": [],
@@ -4354,6 +4354,12 @@
               "name": "dead",
               "type": "boolean",
               "value": false
+            },
+            {
+              "folded": true,
+              "name": "shooting",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -4366,7 +4372,7 @@
               "FiringArc": 45,
               "BulletQuantity": 1,
               "AngleVariance": 0,
-              "RotateBullet": true,
+              "RotateBullet": false,
               "AmmoQuantity": 0,
               "ShotsPerReload": 0,
               "ReloadDuration": 1,
@@ -5109,7 +5115,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.3,
+                  "timeBetweenFrames": 0.09,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -5798,9 +5804,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "Destruir Fuera",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             },
             {
               "name": "MonsterEnemy",
@@ -6187,9 +6193,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "Destruir Fuera",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             },
             {
               "name": "RectangleMovement",
@@ -9272,20 +9278,52 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "AnimationEnded2"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
                     "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "z"
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetSceneVariableAsBoolean"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
+                    "Player",
                     "shooting",
                     "False"
                   ]
@@ -9301,16 +9339,17 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "z"
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetSceneVariableAsBoolean"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
+                    "Player",
                     "shooting",
                     "True"
                   ]
@@ -9322,11 +9361,21 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "inverted": true,
+                    "value": "FlippedX"
                   },
                   "parameters": [
-                    "",
-                    "z"
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "shooting",
+                    "True"
                   ]
                 },
                 {
@@ -9345,211 +9394,75 @@
                     "Player",
                     "\"Shoot\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.X(\"13\")",
+                    "Player.Y(\"13\")",
+                    "Bullet",
+                    "0",
+                    "400",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FlippedX"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "shooting",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "SceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "shooting",
-                        "False"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "shooting",
-                        "True"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::Fire"
-                      },
-                      "parameters": [
-                        "Player",
-                        "FireBullet",
-                        "Player.X()",
-                        "Player.Y()",
-                        "Bullet",
-                        "0",
-                        "400",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::Fire"
-                      },
-                      "parameters": [
-                        "Player",
-                        "FireBullet",
-                        "Player.X()",
-                        "Player.Y()",
-                        "Bullet",
-                        "180",
-                        "400",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Shoot\""
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Shoot\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimationEnded2"
-                      },
-                      "parameters": [
-                        "Player"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Idle\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimationName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"Shoot\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "SceneVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "shooting",
-                            "False"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::Fire"
-                      },
-                      "parameters": [
-                        "Player",
-                        "FireBullet",
-                        "Player.X()",
-                        "Player.Y()",
-                        "Bullet",
-                        "0",
-                        "400",
-                        ""
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "AnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Shoot\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "value": "SceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "shooting",
-                                "True"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FireBullet::FireBullet::Fire"
-                          },
-                          "parameters": [
-                            "Player",
-                            "FireBullet",
-                            "Player.X()",
-                            "Player.Y()",
-                            "Bullet",
-                            "180",
-                            "400",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.X(\"0\")",
+                    "Player.Y(\"0\")",
+                    "Bullet",
+                    "180",
+                    "400",
+                    ""
                   ]
                 }
               ]
@@ -9678,7 +9591,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -9773,7 +9686,6 @@
       "shortDescription": "Animate a tiled sprite from a sprite sheet.",
       "version": "1.0.0",
       "description": [
-        "",
         "Animate images from a sprite sheet by using a tiled sprite.",
         "",
         "## How to use",
