@@ -815,7 +815,7 @@
         "alwaysLoaded": false,
         "file": "assets/boundary.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/boundary.png\",\"extension\":\".png\"}",
         "name": "assets\\boundary.png",
         "smoothed": true,
         "userAdded": false
@@ -1324,6 +1324,15 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "BubblyBogaloo_Assets\\Bullet\\Bubble3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Level Tiles/sprite_10.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Level Tiles/sprite_10.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_10.png",
         "smoothed": false,
         "userAdded": true
       }
@@ -3071,7 +3080,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5382584178665567,
+        "zoomFactor": 0.74993117253118,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3223,7 +3232,7 @@
           "persistentUuid": "85c756df-5168-4a9b-954d-3f1a66a4b173",
           "width": 424,
           "x": 17,
-          "y": 39,
+          "y": 12,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -3277,6 +3286,7 @@
         {
           "angle": 0,
           "customSize": true,
+          "depth": 0,
           "height": 928,
           "layer": "",
           "name": "LeftBoundary",
@@ -3768,8 +3778,8 @@
           "name": "Life",
           "persistentUuid": "b1c417e7-6771-41eb-a950-5feaddd7443d",
           "width": 0,
-          "x": 57,
-          "y": 94,
+          "x": 511,
+          "y": 12,
           "zOrder": 64,
           "numberProperties": [],
           "stringProperties": [],
@@ -3819,6 +3829,70 @@
           "x": 743,
           "y": 439,
           "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "UI",
+          "name": "NewTiledSprite",
+          "persistentUuid": "4e60118b-221f-4f38-98f5-ec9b9a852d81",
+          "width": 2272,
+          "x": -3,
+          "y": 655,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 928,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "41454378-4e84-4267-8129-3577085b22ba",
+          "width": 135,
+          "x": 2063,
+          "y": -256,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "UI",
+          "name": "NewTiledSprite",
+          "persistentUuid": "d383cc72-7597-43f6-ada3-4d7c13442d7c",
+          "width": 2272,
+          "x": -3,
+          "y": -67,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 928,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "9cb7d8ee-e4db-48aa-9dd1-a83d38b1c8ca",
+          "width": 145,
+          "x": 52,
+          "y": -250,
+          "zOrder": 67,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6506,7 +6580,7 @@
           "name": "LeftBoundary",
           "tags": "",
           "type": "Sprite",
-          "updateIfNotVisible": false,
+          "updateIfNotVisible": true,
           "variables": [],
           "effects": [],
           "behaviors": [
@@ -6520,15 +6594,16 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\boundary",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.00001,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\boundary.png",
                       "points": [],
                       "originPoint": {
@@ -6542,7 +6617,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -7249,6 +7343,18 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "height": 100,
+          "name": "NewTiledSprite",
+          "tags": "",
+          "texture": "BubblyBogaloo_Assets\\Level Tiles\\sprite_10.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 100,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -9512,7 +9618,7 @@
           "isLocked": false,
           "name": "EndScreen",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
