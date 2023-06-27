@@ -1443,6 +1443,24 @@
         "name": "Noangry",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Level Tiles/sprite_13.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Level Tiles/sprite_13.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Level Tiles/sprite_00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_00.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3188,7 +3206,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.3623115632974592,
+        "zoomFactor": 1.0800778004377853,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3297,7 +3315,12 @@
           "x": 205,
           "y": 81,
           "zOrder": 6,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -3325,7 +3348,7 @@
           "persistentUuid": "fb84a04d-cfeb-4e71-a07c-cd64c5b91f23",
           "width": 64.24380493164062,
           "x": 2041.7562255859375,
-          "y": 234.75619506835938,
+          "y": 174.75619506835938,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -3349,45 +3372,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 265.3482971191406,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
           "layer": "",
           "name": "Platform4",
           "persistentUuid": "dac6a253-9929-4369-b079-5ea42e96d4da",
-          "width": 320,
-          "x": 1802,
-          "y": 280,
+          "width": 50,
+          "x": 1864,
+          "y": 287,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 160,
-          "layer": "UI",
-          "name": "JumpButton",
-          "persistentUuid": "8e48ab68-c147-4828-9609-d7cc250c52a1",
-          "width": 160,
-          "x": 816,
-          "y": 432,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 78,
-          "layer": "",
-          "name": "Clouds",
-          "persistentUuid": "7a4f19b7-6962-4686-9bfa-69dd5158902c",
-          "width": 2269,
-          "x": 0,
-          "y": 472,
-          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3431,8 +3425,8 @@
           "name": "Coin",
           "persistentUuid": "8f4f48ed-995c-4c89-b37c-a1e26bab5015",
           "width": 27.925533294677734,
-          "x": 1908,
-          "y": 43,
+          "x": 1836,
+          "y": 68,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3446,8 +3440,8 @@
           "name": "Coin",
           "persistentUuid": "457309c4-eb4f-4740-a1d2-12e1d4b8dec5",
           "width": 27.925533294677734,
-          "x": 414,
-          "y": 28,
+          "x": 404,
+          "y": 163,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3461,8 +3455,8 @@
           "name": "Coin",
           "persistentUuid": "edd62113-fad1-4248-8d10-0ec8724b329b",
           "width": 27.925533294677734,
-          "x": 1245,
-          "y": 67,
+          "x": 1074,
+          "y": 249,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3476,31 +3470,10 @@
           "name": "Coin",
           "persistentUuid": "e6379e27-54c7-4edf-9720-93935bd3a6df",
           "width": 27.925533294677734,
-          "x": 1659,
-          "y": 67,
+          "x": 1436,
+          "y": 181,
           "zOrder": 17,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 70,
-          "layer": "",
-          "name": "Monster",
-          "persistentUuid": "476f898e-5a8d-48bd-bbb3-1cabe592b8c8",
-          "width": 70,
-          "x": 768,
-          "y": 406,
-          "zOrder": 41,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -3532,21 +3505,6 @@
           "x": 1172,
           "y": 236,
           "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 155,
-          "layer": "Background",
-          "name": "Moon",
-          "persistentUuid": "d69158af-6294-402d-b60b-65dd19e09e59",
-          "width": 156.37167358398438,
-          "x": 737.6282958984375,
-          "y": -64,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3652,8 +3610,8 @@
           "name": "Coin",
           "persistentUuid": "c609b5d6-28cf-4684-877a-4c2b7f8ec613",
           "width": 27.925533294677734,
-          "x": 970,
-          "y": 33,
+          "x": 850,
+          "y": 266,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3784,15 +3742,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
           "layer": "",
           "name": "Portal",
           "persistentUuid": "7efbc01f-ebde-481a-8ed2-824eb6c891f2",
-          "width": 0,
-          "x": 1845,
-          "y": -14,
-          "zOrder": 4,
+          "width": 50,
+          "x": 1939,
+          "y": 112,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3838,21 +3797,6 @@
           "x": 0,
           "y": 544,
           "zOrder": 60,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 160,
-          "layer": "UI",
-          "name": "Joystick",
-          "persistentUuid": "fcbc25c5-15d6-4b85-a6ec-08b9140c8cb7",
-          "width": 160,
-          "x": 161,
-          "y": 437,
-          "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4201,7 +4145,7 @@
           "name": "Platform1",
           "persistentUuid": "c7e0708e-1a6b-4f6d-a2f2-80515c4953dc",
           "width": 50,
-          "x": 147,
+          "x": 2063,
           "y": -294,
           "zOrder": 0,
           "numberProperties": [],
@@ -4322,22 +4266,473 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 35,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "1463f7e2-39f1-482e-a4a9-84ed2ec600ba",
+          "width": 27.925533294677734,
+          "x": 1245,
+          "y": 67,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 35,
+          "layer": "",
+          "name": "Coin",
+          "persistentUuid": "2700e299-2c43-4d40-b233-98514fbfb5c2",
+          "width": 27.925533294677734,
+          "x": 1659,
+          "y": 67,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "depth": 0,
           "height": 70,
           "layer": "",
           "name": "Monster",
-          "persistentUuid": "ae31ba88-0674-41e0-8f32-1dd3ff458192",
+          "persistentUuid": "cfab8ced-c262-4c12-84ae-18083fc6e1d8",
           "width": 70,
-          "x": 1809,
-          "y": 236,
-          "zOrder": 68,
+          "x": 768,
+          "y": 406,
+          "zOrder": 5,
           "numberProperties": [
             {
               "name": "animation",
               "value": 0
             }
           ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 70,
+          "layer": "",
+          "name": "Monster",
+          "persistentUuid": "581e5c1f-5fac-49a9-a27a-389fdac2e5ef",
+          "width": 70,
+          "x": 990,
+          "y": 283,
+          "zOrder": 5,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "f0401c66-4b13-42dd-a29b-97fa2128e732",
+          "width": 50,
+          "x": 2014,
+          "y": 437,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "1facae47-bb81-43a8-a64f-07a903d46d1b",
+          "width": 50,
+          "x": 1964,
+          "y": 387,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "f36a8a0a-45bf-4386-8e36-06a5e937911f",
+          "width": 50,
+          "x": 2014,
+          "y": 237,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "3a235485-e269-4a1f-af67-e92f986ae691",
+          "width": 50,
+          "x": 1864,
+          "y": 237,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "3eb0c404-2c66-4d51-b79c-da4708a8db59",
+          "width": 50,
+          "x": 1814,
+          "y": 237,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "57af8fd7-08f0-4e21-ba08-f136033c10ea",
+          "width": 50,
+          "x": 1989,
+          "y": 63,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "e4e5d1e6-577a-4649-9456-f24351f492c4",
+          "width": 50,
+          "x": 1964,
+          "y": 237,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "635dd437-9236-4ce7-9fb3-1ebfae71374b",
+          "width": 50,
+          "x": 1914,
+          "y": 337,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "af275cdc-6b8c-4c96-be25-2fcbae3539f9",
+          "width": 50,
+          "x": 2014,
+          "y": 287,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "8bf58975-77f2-4c6e-b3cd-cdbbbefa5147",
+          "width": 50,
+          "x": 1964,
+          "y": 287,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "d8dd74f7-b4c2-453c-8932-494236c96d13",
+          "width": 50,
+          "x": 1914,
+          "y": 287,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "afad5988-5d39-42db-96a5-28ef4faf6e69",
+          "width": 50,
+          "x": 1964,
+          "y": 337,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "0c2e4855-560a-4ab6-b312-fc25ba8cf662",
+          "width": 50,
+          "x": 2014,
+          "y": 337,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "01c49dc3-040f-494d-893d-246623a06579",
+          "width": 50,
+          "x": 1989,
+          "y": 112,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "65b05070-5ee0-487c-9442-770277fd15f7",
+          "width": 50,
+          "x": 1914,
+          "y": 237,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "08af55ee-fe5d-4826-bc1b-cf5e4fbbaef4",
+          "width": 50,
+          "x": 1939,
+          "y": 63,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "c3ff59f1-aaca-466d-a39f-d30493f159c4",
+          "width": 50,
+          "x": 1989,
+          "y": 206,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "12063626-0f94-4b10-9fcc-9a03528314d9",
+          "width": 50,
+          "x": 1939,
+          "y": 206,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "f2213da8-be51-40d3-938d-f4b0b9638d9b",
+          "width": 50,
+          "x": 2013,
+          "y": 138,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "875b6eec-2bbe-4a8d-89d1-310e6e45c7f2",
+          "width": 50,
+          "x": 2013,
+          "y": 88,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "b04dd6c5-9b0e-45d8-81a9-ec72c7812ed6",
+          "width": 50,
+          "x": 1939,
+          "y": 159,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "5ec8cead-381a-4a98-868a-6250b05342a4",
+          "width": 50,
+          "x": 1989,
+          "y": 159,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "87b18c32-8342-457d-b55e-5c68d987b636",
+          "width": 50,
+          "x": 2014,
+          "y": 387,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform4",
+          "persistentUuid": "06610a87-a4aa-4905-bc0e-08e0ece4fd1d",
+          "width": 50,
+          "x": 2013,
+          "y": 188,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 973,
+          "layer": "",
+          "name": "Platform1",
+          "persistentUuid": "dcb55635-60a2-4e75-97d9-719a71e31fa8",
+          "width": 50,
+          "x": 147,
+          "y": -294,
+          "zOrder": 0,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -5429,7 +5824,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Corner platform.png",
+                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_12.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5445,24 +5840,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 18.75,
-                            "y": 22
+                            "x": 0,
+                            "y": 16
                           },
                           {
-                            "x": 320,
-                            "y": 22
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 320,
-                            "y": 265
+                            "x": 16,
+                            "y": 0
                           },
                           {
-                            "x": 201.25,
-                            "y": 265
-                          },
-                          {
-                            "x": 23.125,
-                            "y": 90.3125
+                            "x": 16,
+                            "y": 16
                           }
                         ]
                       ]
@@ -5499,16 +5890,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\Door",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Door.png",
+                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5524,20 +5916,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 160,
-                            "y": 135
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 240,
-                            "y": 135
+                            "x": 0,
+                            "y": 16
                           },
                           {
-                            "x": 240,
-                            "y": 320
+                            "x": 16,
+                            "y": 16
                           },
                           {
-                            "x": 160,
-                            "y": 320
+                            "x": 16,
+                            "y": 0
                           }
                         ]
                       ]
@@ -5798,7 +6190,7 @@
             {
               "name": "angry",
               "type": "boolean",
-              "value": false
+              "value": true
             }
           ],
           "effects": [],
@@ -7375,7 +7767,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "BubblyBogaloo_Assets\\Bullet\\Bubble3",
                       "points": [],
                       "originPoint": {
@@ -7389,7 +7781,42 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 7
+                          },
+                          {
+                            "x": 20,
+                            "y": 0
+                          },
+                          {
+                            "x": 35,
+                            "y": 7
+                          },
+                          {
+                            "x": 40,
+                            "y": 20
+                          },
+                          {
+                            "x": 33,
+                            "y": 35
+                          },
+                          {
+                            "x": 20,
+                            "y": 40
+                          },
+                          {
+                            "x": 8,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 20
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -8120,6 +8547,12 @@
                             "Player",
                             "PlatformerObject"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -8347,6 +8780,26 @@
                   "conditions": [
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "Enemy::MonsterEnemy::IsAngry"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "MonsterEnemy",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsFalling"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "CollisionNP"
                       },
                       "parameters": [
@@ -8358,141 +8811,105 @@
                       ]
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
+                      "type": {
+                        "value": "Delete"
                       },
-                      "comment": "The player always dies when the enemy is on fire."
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Enemy::MonsterEnemy::IsAngry"
-                          },
-                          "parameters": [
-                            "Monster",
-                            "MonsterEnemy",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Player::TriggerDeath"
-                          },
-                          "parameters": [
-                            "",
-                            "Player",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetAnimationName"
-                          },
-                          "parameters": [
-                            "Player",
-                            "\"Death\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "Life",
-                            "-",
-                            "1"
-                          ]
-                        }
+                      "parameters": [
+                        "Monster",
+                        ""
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Enemy::MonsterEnemy::IsAngry"
-                          },
-                          "parameters": [
-                            "Monster",
-                            "MonsterEnemy",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "PlatformBehavior::IsFalling"
-                              },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "Monster",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "MonsterParticles",
-                                "MonsterParticles",
-                                "Monster.CenterX()",
-                                "Monster.CenterY()",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Player::Bounce"
-                              },
-                              "parameters": [
-                                "",
-                                "Player",
-                                "PlatformerObject",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "Score",
-                                "+",
-                                "50"
-                              ]
-                            }
-                          ]
-                        }
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "MonsterParticles",
+                        "MonsterParticles",
+                        "Monster.CenterX()",
+                        "Monster.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Player::Bounce"
+                      },
+                      "parameters": [
+                        "",
+                        "Player",
+                        "PlatformerObject",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Score",
+                        "+",
+                        "50"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Enemy::MonsterEnemy::IsAngry"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "MonsterEnemy",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Monster",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Player::TriggerDeath"
+                      },
+                      "parameters": [
+                        "",
+                        "Player",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"Death\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Life",
+                        "-",
+                        "1"
                       ]
                     }
                   ]
@@ -9402,12 +9819,42 @@
                   "parameters": [
                     "Player",
                     "FireBullet",
-                    "Player.X(\"13\")",
-                    "Player.Y(\"13\")",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
                     "Bullet",
                     "0",
                     "400",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "30",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "-",
+                    "10"
                   ]
                 }
               ]
@@ -44073,7 +44520,7 @@
             },
             {
               "description": "Check if an enemy is angry.",
-              "fullName": "Angry",
+              "fullName": "NoAngry",
               "functionType": "Condition",
               "name": "IsAngry",
               "sentence": "_PARAM0_ is angry",
@@ -44114,7 +44561,7 @@
                         "Object",
                         "\"TimerAngry\"",
                         ">=",
-                        "5"
+                        "3"
                       ]
                     }
                   ],
