@@ -3206,7 +3206,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.44113598384188724,
+        "zoomFactor": 1.4557357853567916,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3312,8 +3312,8 @@
           "name": "Player",
           "persistentUuid": "531d1c3f-aae2-413f-ba87-81f0b6673f1b",
           "width": 78,
-          "x": 205,
-          "y": 81,
+          "x": 190,
+          "y": 82,
           "zOrder": 6,
           "numberProperties": [
             {
@@ -3728,14 +3728,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 622,
+          "depth": 0,
+          "height": 681,
           "layer": "Background",
           "name": "BackgroundPlants",
           "persistentUuid": "03b6869d-198f-4807-b659-f2b863e21073",
           "width": 2272,
           "x": 0,
-          "y": -25,
-          "zOrder": -1,
+          "y": 35,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3789,14 +3790,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 128,
+          "depth": 0,
+          "height": 84,
           "layer": "",
           "name": "BottomBoundary",
           "persistentUuid": "00f86cf3-18b0-4d71-9ce8-952dfc4e6b5c",
           "width": 2272,
           "x": 0,
-          "y": 544,
-          "zOrder": 60,
+          "y": 588,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3970,22 +3972,6 @@
           "persistentUuid": "18d12c34-43ce-441d-901b-4d61bd9aa25f",
           "width": 50,
           "x": 859,
-          "y": 468,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 50,
-          "layer": "",
-          "name": "Platform1",
-          "persistentUuid": "2e55dd4c-72a4-46dd-9654-e96dddbe7e90",
-          "width": 50,
-          "x": 759,
           "y": 468,
           "zOrder": 3,
           "numberProperties": [],
@@ -4303,7 +4289,7 @@
           "name": "Monster",
           "persistentUuid": "cfab8ced-c262-4c12-84ae-18083fc6e1d8",
           "width": 70,
-          "x": 768,
+          "x": 753,
           "y": 406,
           "zOrder": 5,
           "numberProperties": [
@@ -4324,8 +4310,8 @@
           "name": "Monster",
           "persistentUuid": "581e5c1f-5fac-49a9-a27a-389fdac2e5ef",
           "width": 70,
-          "x": 990,
-          "y": 283,
+          "x": 980,
+          "y": 286,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -4735,6 +4721,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "",
+          "name": "Platform1",
+          "persistentUuid": "803441bb-e98e-4cb2-aa2a-7da23844f9b5",
+          "width": 50,
+          "x": 759,
+          "y": 468,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4922,39 +4924,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -4978,39 +4980,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5046,39 +5048,35 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
                           },
                           {
-                            "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "x": 17,
+                            "y": 9.5
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5102,39 +5100,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
                           },
                           {
                             "x": 16,
-                            "y": 6
+                            "y": 10
                           },
                           {
-                            "x": 16,
-                            "y": 13
+                            "x": 15,
+                            "y": 14
                           },
                           {
-                            "x": 16,
+                            "x": 15,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5170,39 +5168,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 7
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
+                            "x": 13,
+                            "y": 4
+                          },
+                          {
                             "x": 15,
-                            "y": 5
+                            "y": 10
                           },
                           {
-                            "x": 16,
-                            "y": 6
+                            "x": 15,
+                            "y": 14
                           },
                           {
-                            "x": 16,
-                            "y": 13
-                          },
-                          {
-                            "x": 16,
+                            "x": 15,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 0.5,
                             "y": 17
                           }
                         ]
@@ -5226,39 +5224,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 7
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
+                            "x": 13,
+                            "y": 4
+                          },
+                          {
                             "x": 15,
-                            "y": 5
+                            "y": 10
                           },
                           {
-                            "x": 16,
-                            "y": 6
+                            "x": 15,
+                            "y": 14
                           },
                           {
-                            "x": 16,
-                            "y": 13
-                          },
-                          {
-                            "x": 16,
+                            "x": 15,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 0.5,
                             "y": 17
                           }
                         ]
@@ -5294,39 +5292,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5350,39 +5348,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5406,39 +5404,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5462,39 +5460,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
+                            "x": 4,
+                            "y": 6
                           },
                           {
-                            "x": 7,
-                            "y": 5.5
+                            "x": 6,
+                            "y": 3
                           },
                           {
                             "x": 9,
                             "y": 3
                           },
                           {
-                            "x": 13.5,
+                            "x": 12,
                             "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 5
+                            "y": 4
+                          },
+                          {
+                            "x": 17,
+                            "y": 10
                           },
                           {
                             "x": 16,
-                            "y": 6
-                          },
-                          {
-                            "x": 16,
-                            "y": 13
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -5530,39 +5528,39 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 7.5
-                          },
-                          {
-                            "x": 7,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 13.5,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 5
-                          },
-                          {
-                            "x": 16,
+                            "x": 4,
                             "y": 6
                           },
                           {
+                            "x": 6,
+                            "y": 3
+                          },
+                          {
+                            "x": 9.5,
+                            "y": 1
+                          },
+                          {
+                            "x": 12,
+                            "y": 2
+                          },
+                          {
+                            "x": 15,
+                            "y": 3
+                          },
+                          {
                             "x": 16,
-                            "y": 13
+                            "y": 4
+                          },
+                          {
+                            "x": 16,
+                            "y": 14
                           },
                           {
                             "x": 16,
                             "y": 17
                           },
                           {
-                            "x": 6,
+                            "x": 4,
                             "y": 17
                           }
                         ]
@@ -6190,7 +6188,7 @@
             {
               "name": "angry",
               "type": "boolean",
-              "value": true
+              "value": false
             }
           ],
           "effects": [],
@@ -6208,9 +6206,9 @@
               "name": "TimedBackAndForthMirroredMovement",
               "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement",
               "Vertical": false,
-              "Speed": 50,
-              "Distance": 100,
-              "Timeout": 100,
+              "Speed": 75,
+              "Distance": 150,
+              "Timeout": 2,
               "StartPosition": 0,
               "LastPosition": 0,
               "Timecheck": 0
@@ -6244,7 +6242,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6256,7 +6254,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6280,7 +6278,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6292,7 +6290,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6316,7 +6314,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6328,7 +6326,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6352,7 +6350,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6364,7 +6362,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6388,7 +6386,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6400,7 +6398,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6437,7 +6435,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6449,7 +6447,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6473,7 +6471,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6485,7 +6483,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6509,7 +6507,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6521,7 +6519,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -6545,7 +6543,7 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 1
                           },
                           {
@@ -6557,7 +6555,7 @@
                             "y": 16
                           },
                           {
-                            "x": 16,
+                            "x": 17,
                             "y": 16
                           }
                         ]
@@ -8780,26 +8778,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Enemy::MonsterEnemy::IsAngry"
-                      },
-                      "parameters": [
-                        "Monster",
-                        "MonsterEnemy",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsFalling"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "CollisionNP"
                       },
                       "parameters": [
@@ -8809,38 +8787,35 @@
                         "",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Enemy::MonsterEnemy::Angry"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "MonsterEnemy",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Delete"
+                        "value": "SetAnimationName"
                       },
                       "parameters": [
-                        "Monster",
-                        ""
+                        "Player",
+                        "\"Death\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "MonsterParticles",
-                        "MonsterParticles",
-                        "Monster.CenterX()",
-                        "Monster.CenterY()",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Player::Bounce"
+                        "value": "Player::TriggerDeath"
                       },
                       "parameters": [
                         "",
                         "Player",
-                        "PlatformerObject",
                         ""
                       ]
                     },
@@ -8849,26 +8824,17 @@
                         "value": "ModVarScene"
                       },
                       "parameters": [
-                        "Score",
-                        "+",
-                        "50"
+                        "Life",
+                        "-",
+                        "1"
                       ]
                     }
                   ]
                 },
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "Enemy::MonsterEnemy::IsAngry"
-                      },
-                      "parameters": [
-                        "Monster",
-                        "MonsterEnemy",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "CollisionNP"
@@ -8878,6 +8844,17 @@
                         "Monster",
                         "",
                         "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Enemy::MonsterEnemy::Angry"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "MonsterEnemy",
                         ""
                       ]
                     }
@@ -8913,70 +8890,94 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Enemy::IsFlyDead"
-                      },
-                      "parameters": [
-                        "",
-                        "Monster",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Bullet",
-                        "Monster",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Enemy::TriggerFlyDeath"
-                      },
-                      "parameters": [
-                        "",
-                        "Monster",
-                        "RectangleMovement",
-                        "ShakeObject_PositionAngle",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "Score",
-                        "+",
-                        "50"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Bullet",
-                        ""
-                      ]
-                    }
-                  ]
                 }
               ],
               "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Monster",
+                    "MonsterEnemy",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Monster",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlatformBehavior::IsFalling"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "MonsterParticles",
+                    "MonsterParticles",
+                    "Monster.CenterX()",
+                    "Monster.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Monster",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Player::Bounce"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "PlatformerObject",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Score",
+                    "+",
+                    "50"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -10151,6 +10152,361 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "@4ian",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Animated Back and Forth Movement",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlcGVhdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNywxN0g3VjE0TDMsMThMNywyMlYxOUgxOVYxM0gxN003LDdIMTdWMTBMMjEsNkwxNywyVjVINVYxMUg3VjdaIiAvPjwvc3ZnPg==",
+      "name": "AnimatedBackAndForthMovement",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/repeat.svg",
+      "shortDescription": "Make the object go on the left, then when some distance is reached, flip and go back to the right. Make sure that your object has two animations called \"GoLeft\" and \"TurnLeft\".",
+      "version": "0.0.2",
+      "description": "Make the object go on the left, then when some distance is reached, flip and go back to the right. **Make sure** that your object has **two animations called \"GoLeft\" and \"TurnLeft\"**.",
+      "origin": {
+        "identifier": "AnimatedBackAndForthMovement",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "back",
+        "forth",
+        "movement"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Make the object go on the left, then when some distance is reached, flip and go back to the right. Make sure that your object has two animations called \"GoLeft\" and \"TurnLeft\".",
+          "fullName": "Animated Back and Forth (mirrored) Movement",
+          "name": "AnimatedBackAndForthMirroredMovement",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement::PropertyInitialX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement::SetPropertyInitialX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.X()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Move the object to the left or right"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"GoLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-Object.Behavior::PropertySpeedX()",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"GoLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "+Object.Behavior::PropertySpeedX()",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If the distance \"DistanceX\" is reached, turn the object"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Object",
+                        ">",
+                        "Object.Behavior::PropertyInitialX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyInitialX()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "<",
+                        "Object.Behavior::PropertyInitialX() - Object.Behavior::PropertyDistanceX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyInitialX() - Object.Behavior::PropertyDistanceX()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "At the end of the turn, go back to moving to th left (or right if flipped)"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationEnded"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"GoLeft\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "200",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Speed on X axis, in pixels per second",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "SpeedX"
+            },
+            {
+              "value": "300",
+              "type": "Number",
+              "unit": "Pixel",
+              "label": "Distance traveled on X axis, in pixels",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "DistanceX"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "InitialX"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "Maxwell Coffey, Arthur Pacaud (arthuro555)",
       "category": "Advanced",
@@ -44397,11 +44753,22 @@
                     },
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "ChangeAnimation"
                       },
                       "parameters": [
                         "Object",
-                        "\"Angry\""
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Object",
+                        "angry",
+                        "False"
                       ]
                     }
                   ]
@@ -44430,20 +44797,18 @@
               "sentence": "",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Turn \"Fire\" on and off"
-                },
-                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "Animation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "CompareObjectTimer"
@@ -44454,18 +44819,19 @@
                         ">=",
                         "2"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"Angry\""
-                      ]
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "1"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ResetObjectTimer"
@@ -44477,11 +44843,12 @@
                     },
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "SetObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "Object",
-                        "\"NoAngry\""
+                        "angry",
+                        "True"
                       ]
                     }
                   ]
@@ -44491,26 +44858,47 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "Animation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "CompareObjectTimer"
                       },
                       "parameters": [
                         "Object",
                         "\"TimerAngry\"",
                         ">=",
-                        "2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"NoAngry\""
+                        "4"
                       ]
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Object",
+                        "angry",
+                        "False"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ResetObjectTimer"
@@ -44519,17 +44907,13 @@
                         "Object",
                         "\"TimerAngry\""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAnimationName"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"Angry\""
-                      ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ],
               "parameters": [
@@ -44549,49 +44933,32 @@
               "objectGroups": []
             },
             {
-              "description": "Check if an enemy is angry.",
-              "fullName": "NoAngry",
+              "fullName": "angry",
               "functionType": "Condition",
-              "name": "IsAngry",
-              "sentence": "_PARAM0_ is angry",
+              "name": "Angry",
+              "sentence": "_PARAM0_is angry",
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "AnimationName"
+                        "value": "Animation"
                       },
                       "parameters": [
                         "Object",
-                        "\"NoAngry\""
+                        "=",
+                        "1"
                       ]
-                    }
-                  ],
-                  "actions": [
+                    },
                     {
                       "type": {
-                        "value": "ResetObjectTimer"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
                         "Object",
-                        "\"TimerAngry\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"TimerAngry\"",
-                        ">=",
-                        "3"
+                        "angry",
+                        "True"
                       ]
                     }
                   ],
@@ -44606,11 +44973,12 @@
                     },
                     {
                       "type": {
-                        "value": "SetAnimationName"
+                        "value": "ChangeAnimation"
                       },
                       "parameters": [
                         "Object",
-                        "\"Angry\""
+                        "=",
+                        "0"
                       ]
                     }
                   ]
