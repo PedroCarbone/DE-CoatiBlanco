@@ -1461,6 +1461,15 @@
         "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_00.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Level Tiles/sprite_07.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_07.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1495,7 +1504,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7053809869542479,
+        "zoomFactor": 0.7537544073501775,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3206,7 +3215,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.4557357853567916,
+        "zoomFactor": 0.4560112348273082,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3440,8 +3449,8 @@
           "name": "Coin",
           "persistentUuid": "457309c4-eb4f-4740-a1d2-12e1d4b8dec5",
           "width": 27.925533294677734,
-          "x": 404,
-          "y": 163,
+          "x": 405,
+          "y": 314,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3703,8 +3712,8 @@
           "name": "Bubble",
           "persistentUuid": "1989e88d-b9a1-4d50-bf0e-59255f899d23",
           "width": 100,
-          "x": 366,
-          "y": 237,
+          "x": 364,
+          "y": 134,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6611,7 +6620,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "burbujeable",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -6656,28 +6665,28 @@
                             "y": 3
                           },
                           {
-                            "x": 12.5,
-                            "y": 3.5
-                          },
-                          {
-                            "x": 14.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 16,
-                            "y": 7.5
-                          },
-                          {
-                            "x": 17,
-                            "y": 11
+                            "x": 13,
+                            "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 16
+                            "y": 4.5
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 18,
+                            "y": 11
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 17
                           },
                           {
                             "x": 13,
-                            "y": 18
+                            "y": 19
                           },
                           {
                             "x": 10,
@@ -6732,28 +6741,28 @@
                             "y": 3
                           },
                           {
-                            "x": 12.5,
-                            "y": 3.5
-                          },
-                          {
-                            "x": 14.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 16,
-                            "y": 7.5
-                          },
-                          {
-                            "x": 17,
-                            "y": 11
+                            "x": 13,
+                            "y": 3
                           },
                           {
                             "x": 15,
-                            "y": 16
+                            "y": 4.5
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 18,
+                            "y": 11
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 17
                           },
                           {
                             "x": 13,
-                            "y": 18
+                            "y": 19
                           },
                           {
                             "x": 10,
@@ -7862,6 +7871,74 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "PlataformaBurbuja",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_10.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -8532,7 +8609,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "The player kill ennemies when it falls on them."
+                      "comment": "The player is killed"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -8548,6 +8625,16 @@
                         },
                         {
                           "type": {
+                            "value": "Animation"
+                          },
+                          "parameters": [
+                            "Bubble",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "BuiltinCommonInstructions::Once"
                           },
                           "parameters": []
@@ -8556,35 +8643,22 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Enemy::TriggerFlyDeath"
-                          },
-                          "parameters": [
-                            "",
-                            "Bubble",
-                            "RectangleMovement",
-                            "ShakeObject_PositionAngle",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Player::Bounce"
-                          },
-                          "parameters": [
-                            "",
-                            "Player",
-                            "PlatformerObject",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "Score",
                             "+",
                             "50"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Player::TriggerDeath"
+                          },
+                          "parameters": [
+                            "",
+                            "Player",
+                            ""
                           ]
                         }
                       ]
@@ -8670,18 +8744,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Enemy::TriggerFlyDeath"
-                  },
-                  "parameters": [
-                    "",
-                    "Bubble",
-                    "RectangleMovement",
-                    "ShakeObject_PositionAngle",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -8696,6 +8758,38 @@
                   },
                   "parameters": [
                     "Bullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PlataformaBurbuja",
+                    "Bubble.X()",
+                    "Bubble.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "PlataformaBurbuja",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Player::TriggerDeath"
+                  },
+                  "parameters": [
+                    "",
+                    "Bubble",
                     ""
                   ]
                 }
