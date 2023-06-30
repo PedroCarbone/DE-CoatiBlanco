@@ -3412,7 +3412,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7752190992064372,
+        "zoomFactor": 0.4267459689098455,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3518,8 +3518,8 @@
           "name": "Player",
           "persistentUuid": "531d1c3f-aae2-413f-ba87-81f0b6673f1b",
           "width": 78,
-          "x": 1800,
-          "y": 383,
+          "x": 234,
+          "y": 524,
           "zOrder": 6,
           "numberProperties": [
             {
@@ -7528,6 +7528,52 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -8738,12 +8784,12 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_13.png",
+                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -8759,24 +8805,120 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 3,
+                            "y": 13
                           },
                           {
-                            "x": 280,
-                            "y": 0
+                            "x": 3,
+                            "y": 9
                           },
                           {
-                            "x": 280,
-                            "y": 300
+                            "x": 5,
+                            "y": 5
                           },
                           {
-                            "x": 183.5,
-                            "y": 299.5
+                            "x": 8,
+                            "y": 3
                           },
                           {
-                            "x": 0,
-                            "y": 299
+                            "x": 12,
+                            "y": 3
+                          },
+                          {
+                            "x": 15,
+                            "y": 5
+                          },
+                          {
+                            "x": 17,
+                            "y": 9
+                          },
+                          {
+                            "x": 17,
+                            "y": 13
+                          },
+                          {
+                            "x": 15,
+                            "y": 17
+                          },
+                          {
+                            "x": 12,
+                            "y": 19
+                          },
+                          {
+                            "x": 8,
+                            "y": 19
+                          },
+                          {
+                            "x": 5,
+                            "y": 17
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 13
+                          },
+                          {
+                            "x": 3,
+                            "y": 9
+                          },
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 8,
+                            "y": 3
+                          },
+                          {
+                            "x": 12,
+                            "y": 3
+                          },
+                          {
+                            "x": 15,
+                            "y": 5
+                          },
+                          {
+                            "x": 17,
+                            "y": 9
+                          },
+                          {
+                            "x": 17,
+                            "y": 13
+                          },
+                          {
+                            "x": 15,
+                            "y": 17
+                          },
+                          {
+                            "x": 12,
+                            "y": 19
+                          },
+                          {
+                            "x": 8,
+                            "y": 19
+                          },
+                          {
+                            "x": 5,
+                            "y": 17
                           }
                         ]
                       ]
@@ -9657,7 +9799,7 @@
                   "parameters": [
                     "NewSprite",
                     "=",
-                    "0.25"
+                    "5"
                   ]
                 },
                 {
@@ -9761,6 +9903,64 @@
                   ]
                 },
                 {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Monster",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Animation"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Monster",
+                        "\"Death\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Player::TriggerDeath"
+                      },
+                      "parameters": [
+                        "",
+                        "Monster",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "Score",
+                        "+",
+                        "50"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -9852,29 +10052,21 @@
                 },
                 {
                   "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "Monster",
-                    "\"Death\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Monster",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
                     "Bullet",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Monster",
+                    "=",
+                    "2"
                   ]
                 }
               ]
