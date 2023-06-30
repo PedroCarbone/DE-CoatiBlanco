@@ -1464,41 +1464,29 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "BubblyBogaloo_Assets/Level Tiles/sprite_07.png",
+        "file": "image2.png",
         "kind": "image",
         "metadata": "",
-        "name": "BubblyBogaloo_Assets\\Level Tiles\\sprite_07.png",
+        "name": "image2.png",
         "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "Bubble Bobble Arcade In-Game Music (64 kbps).mp3",
-        "kind": "audio",
+        "alwaysLoaded": false,
+        "file": "Abajo.png",
+        "kind": "image",
         "metadata": "",
-        "name": "Bubble Bobble Arcade In-Game Music (64 kbps).mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "name": "Abajo.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
-        "file": "BubblyBogaloo_Assets/Menu/Music Menu.mp3",
-        "kind": "audio",
+        "alwaysLoaded": false,
+        "file": "arriba.png",
+        "kind": "image",
         "metadata": "",
-        "name": "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "BubblyBogaloo_Assets/Menu/Bailen rochas y chetas - level.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
+        "name": "arriba.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -1534,7 +1522,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7537544073501775,
+        "zoomFactor": 0.8054451666651876,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2442,33 +2430,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
-                "yes",
-                "25",
-                ""
-              ]
-            }
-          ]
         }
       ],
       "layers": [
@@ -3272,7 +3233,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4560112348273082,
+        "zoomFactor": 1.2748829933030572,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3506,8 +3467,8 @@
           "name": "Coin",
           "persistentUuid": "457309c4-eb4f-4740-a1d2-12e1d4b8dec5",
           "width": 27.925533294677734,
-          "x": 405,
-          "y": 314,
+          "x": 404,
+          "y": 163,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3769,8 +3730,8 @@
           "name": "Bubble",
           "persistentUuid": "1989e88d-b9a1-4d50-bf0e-59255f899d23",
           "width": 100,
-          "x": 364,
-          "y": 134,
+          "x": 366,
+          "y": 237,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6677,7 +6638,7 @@
           ],
           "animations": [
             {
-              "name": "burbujeable",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -6686,7 +6647,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble2.png",
+                      "image": "Abajo.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6722,28 +6683,28 @@
                             "y": 3
                           },
                           {
-                            "x": 13,
-                            "y": 3
+                            "x": 12.5,
+                            "y": 3.5
                           },
                           {
-                            "x": 15,
-                            "y": 4.5
+                            "x": 14.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 16,
+                            "y": 7.5
                           },
                           {
                             "x": 17,
-                            "y": 7
-                          },
-                          {
-                            "x": 18,
                             "y": 11
                           },
                           {
-                            "x": 16.5,
-                            "y": 17
+                            "x": 15,
+                            "y": 16
                           },
                           {
                             "x": 13,
-                            "y": 19
+                            "y": 18
                           },
                           {
                             "x": 10,
@@ -6762,7 +6723,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "BubblyBogaloo_Assets\\Enemy\\Bubble1.png",
+                      "image": "arriba.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6798,28 +6759,28 @@
                             "y": 3
                           },
                           {
-                            "x": 13,
-                            "y": 3
+                            "x": 12.5,
+                            "y": 3.5
                           },
                           {
-                            "x": 15,
-                            "y": 4.5
+                            "x": 14.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 16,
+                            "y": 7.5
                           },
                           {
                             "x": 17,
-                            "y": 7
-                          },
-                          {
-                            "x": 18,
                             "y": 11
                           },
                           {
-                            "x": 16.5,
-                            "y": 17
+                            "x": 15,
+                            "y": 16
                           },
                           {
                             "x": 13,
-                            "y": 19
+                            "y": 18
                           },
                           {
                             "x": 10,
@@ -7928,74 +7889,6 @@
           "variables": [],
           "effects": [],
           "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "name": "PlataformaBurbuja",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_10.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -8666,7 +8559,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "The player is killed"
+                      "comment": "The player kill ennemies when it falls on them."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -8682,16 +8575,6 @@
                         },
                         {
                           "type": {
-                            "value": "Animation"
-                          },
-                          "parameters": [
-                            "Bubble",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BuiltinCommonInstructions::Once"
                           },
                           "parameters": []
@@ -8700,22 +8583,35 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "Enemy::TriggerFlyDeath"
+                          },
+                          "parameters": [
+                            "",
+                            "Bubble",
+                            "RectangleMovement",
+                            "ShakeObject_PositionAngle",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Player::Bounce"
+                          },
+                          "parameters": [
+                            "",
+                            "Player",
+                            "PlatformerObject",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "Score",
                             "+",
                             "50"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Player::TriggerDeath"
-                          },
-                          "parameters": [
-                            "",
-                            "Player",
-                            ""
                           ]
                         }
                       ]
@@ -8801,6 +8697,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Enemy::TriggerFlyDeath"
+                  },
+                  "parameters": [
+                    "",
+                    "Bubble",
+                    "RectangleMovement",
+                    "ShakeObject_PositionAngle",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -8815,38 +8723,6 @@
                   },
                   "parameters": [
                     "Bullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "PlataformaBurbuja",
-                    "Bubble.X()",
-                    "Bubble.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeScale"
-                  },
-                  "parameters": [
-                    "PlataformaBurbuja",
-                    "=",
-                    "4"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Player::TriggerDeath"
-                  },
-                  "parameters": [
-                    "",
-                    "Bubble",
                     ""
                   ]
                 }
@@ -9614,9 +9490,9 @@
                       },
                       "parameters": [
                         "",
-                        "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
+                        "crickets.aac",
                         "yes",
-                        "10",
+                        "30",
                         "1"
                       ]
                     }
