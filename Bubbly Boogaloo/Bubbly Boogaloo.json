@@ -6818,6 +6818,17 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "muerte",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": []
+                }
+              ]
             }
           ]
         },
@@ -8193,6 +8204,43 @@
                   "conditions": [
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Space"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentFallSpeed"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "=",
+                        "200"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "Player::IsSteppingOnFloor"
                       },
                       "parameters": [
@@ -8774,18 +8822,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Enemy::TriggerFlyDeath"
-                  },
-                  "parameters": [
-                    "",
-                    "Bubble",
-                    "RectangleMovement",
-                    "ShakeObject_PositionAngle",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -8823,6 +8859,28 @@
                     "NewSprite",
                     "=",
                     "0.25"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Bubble",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Enemy::TriggerFlyDeath"
+                  },
+                  "parameters": [
+                    "",
+                    "Bubble",
+                    "RectangleMovement",
+                    "ShakeObject_PositionAngle",
+                    ""
                   ]
                 }
               ]
