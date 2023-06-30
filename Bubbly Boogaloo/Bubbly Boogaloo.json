@@ -1488,6 +1488,24 @@
         "name": "arriba.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Enemy/FlyUp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Enemy\\FlyUp.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Enemy/FlyDown.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Enemy\\FlyDown.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3233,7 +3251,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2748829933030572,
+        "zoomFactor": 0.9458947379553659,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6647,7 +6665,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Abajo.png",
+                      "image": "BubblyBogaloo_Assets\\Enemy\\FlyUp.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6723,7 +6741,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "arriba.png",
+                      "image": "BubblyBogaloo_Assets\\Enemy\\FlyDown.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
