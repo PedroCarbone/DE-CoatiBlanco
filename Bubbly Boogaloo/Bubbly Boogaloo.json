@@ -3354,6 +3354,33 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
+                "",
+                "20",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -10644,7 +10671,7 @@
                       },
                       "parameters": [
                         "",
-                        "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
+                        "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
                         "yes",
                         "20",
                         "1"
@@ -11250,7 +11277,7 @@
           "isLocked": false,
           "name": "UI",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -11266,7 +11293,7 @@
           "isLocked": false,
           "name": "EndScreen",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         }
