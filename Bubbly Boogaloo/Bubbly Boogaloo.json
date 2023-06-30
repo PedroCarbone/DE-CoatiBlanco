@@ -1506,6 +1506,26 @@
         "name": "BubblyBogaloo_Assets\\Enemy\\FlyDown.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "BubblyBogaloo_Assets/Menu/Bailen rochas y chetas - level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "BubblyBogaloo_Assets/Menu/Music Menu.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2445,6 +2465,33 @@
                 "exit_button",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
+                "yes",
+                "25",
+                ""
               ]
             }
           ]
@@ -7929,10 +7976,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -9647,9 +9694,9 @@
                       },
                       "parameters": [
                         "",
-                        "crickets.aac",
+                        "BubblyBogaloo_Assets\\Menu\\Bailen rochas y chetas - level.mp3",
                         "yes",
-                        "30",
+                        "20",
                         "1"
                       ]
                     }
