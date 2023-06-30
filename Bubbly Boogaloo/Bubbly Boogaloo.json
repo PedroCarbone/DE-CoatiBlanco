@@ -3251,7 +3251,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9458947379553659,
+        "zoomFactor": 0.7499311725312111,
         "windowMask": false
       },
       "objectsGroups": [
@@ -7907,6 +7907,78 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Level Tiles\\sprite_13.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 0
+                          },
+                          {
+                            "x": 280,
+                            "y": 300
+                          },
+                          {
+                            "x": 183.5,
+                            "y": 299.5
+                          },
+                          {
+                            "x": 0,
+                            "y": 299
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -8577,7 +8649,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "The player kill ennemies when it falls on them."
+                      "comment": "The player dies when falling into enemy"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -8601,35 +8673,22 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Enemy::TriggerFlyDeath"
-                          },
-                          "parameters": [
-                            "",
-                            "Bubble",
-                            "RectangleMovement",
-                            "ShakeObject_PositionAngle",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Player::Bounce"
-                          },
-                          "parameters": [
-                            "",
-                            "Player",
-                            "PlatformerObject",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "ModVarScene"
                           },
                           "parameters": [
                             "Score",
                             "+",
                             "50"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Player::TriggerDeath"
+                          },
+                          "parameters": [
+                            "",
+                            "Player",
+                            ""
                           ]
                         }
                       ]
@@ -8742,6 +8801,28 @@
                   "parameters": [
                     "Bullet",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "NewSprite",
+                    "Bubble.X()",
+                    "Bubble.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeScale"
+                  },
+                  "parameters": [
+                    "NewSprite",
+                    "=",
+                    "0.25"
                   ]
                 }
               ]
