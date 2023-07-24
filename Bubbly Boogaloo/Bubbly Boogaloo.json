@@ -1576,6 +1576,16 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
           "name": "ArchitectsDaughter.ttf"
         }
+      },
+      {
+        "file": "assets/Llora_Nuls.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Llora_Nuls.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1857,6 +1867,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Title",
           "tags": "",
@@ -1898,6 +1909,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bub",
           "tags": "",
@@ -1940,6 +1952,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bob",
           "tags": "",
@@ -1982,6 +1995,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Tabla",
           "tags": "",
@@ -2023,6 +2037,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Walter_white",
           "tags": "",
@@ -2064,6 +2079,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
           "name": "play_button",
           "tags": "",
@@ -2166,6 +2182,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
           "name": "exit_button",
           "tags": "",
@@ -2312,6 +2329,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "boobles2",
           "tags": "",
@@ -3005,6 +3023,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Title",
           "tags": "",
@@ -3046,6 +3065,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bub",
           "tags": "",
@@ -3088,6 +3108,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bob",
           "tags": "",
@@ -3130,6 +3151,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Tabla",
           "tags": "",
@@ -3171,6 +3193,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Walter_white",
           "tags": "",
@@ -3212,6 +3235,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
           "name": "play_button",
           "tags": "",
@@ -3314,6 +3338,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "32ed63ef9c805a51df39d0ef68dd892e7f08cc93e41c92fda4566ae2b28fb39a",
           "name": "exit_button",
           "tags": "",
@@ -3460,6 +3485,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "boobles2",
           "tags": "",
@@ -3988,6 +4014,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "perrito_ansiedad",
           "tags": "",
@@ -4051,6 +4078,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "e096e2982f5d55c556524503932210b054cc495c2e6f233bedaa026c58606b24",
           "name": "DebuffArrow2",
           "tags": "",
@@ -4199,6 +4227,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "exit2",
           "tags": "",
@@ -4280,6 +4309,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Back",
           "tags": "",
@@ -6913,6 +6943,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
           "tags": "",
@@ -7751,6 +7782,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform1",
           "tags": "",
@@ -7820,6 +7852,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform_move",
           "tags": "",
@@ -7905,6 +7938,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform3",
           "tags": "",
@@ -7973,6 +8007,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Platform4",
           "tags": "",
@@ -8041,6 +8076,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Portal",
           "tags": "",
@@ -8117,6 +8153,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Checkpoint",
           "tags": "",
@@ -8308,6 +8345,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Ladder",
           "tags": "",
@@ -8357,6 +8395,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Monster",
           "tags": "",
@@ -8787,6 +8826,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bubble",
           "tags": "",
@@ -8884,6 +8924,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Coin",
           "tags": "",
@@ -9155,6 +9196,7 @@
           "behaviors": []
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LeftBoundary",
           "tags": "",
@@ -9224,6 +9266,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RightBoundary",
           "tags": "",
@@ -9273,6 +9316,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "TopBoundary",
           "tags": "",
@@ -9314,6 +9358,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BottomBoundary",
           "tags": "",
@@ -9355,6 +9400,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BoundaryJumpThrough",
           "tags": "",
@@ -9404,6 +9450,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Moon",
           "tags": "",
@@ -9692,6 +9739,7 @@
           },
           "childrenContent": {
             "Border": {
+              "adaptCollisionMaskAutomatically": false,
               "updateIfNotVisible": false,
               "animations": [
                 {
@@ -9726,6 +9774,7 @@
               ]
             },
             "Thumb": {
+              "adaptCollisionMaskAutomatically": false,
               "updateIfNotVisible": false,
               "animations": [
                 {
@@ -9762,6 +9811,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "JumpButton",
           "tags": "",
@@ -9853,6 +9903,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Bullet",
           "tags": "",
@@ -9971,6 +10022,7 @@
           "behaviors": []
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NewSprite",
           "tags": "",
@@ -11853,7 +11905,7 @@
                       },
                       "parameters": [
                         "",
-                        "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
+                        "assets\\Llora_Nuls.mp3",
                         "yes",
                         "20",
                         "1"
@@ -42535,6 +42587,7 @@
           ],
           "objects": [
             {
+              "adaptCollisionMaskAutomatically": false,
               "assetStoreId": "",
               "name": "Thumb",
               "tags": "",
@@ -42558,6 +42611,7 @@
               ]
             },
             {
+              "adaptCollisionMaskAutomatically": false,
               "assetStoreId": "",
               "name": "Border",
               "tags": "",
