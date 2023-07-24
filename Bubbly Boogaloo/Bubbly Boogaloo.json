@@ -4608,7 +4608,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6567637531652425,
+        "zoomFactor": 0.749931172531225,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4724,7 +4724,14 @@
             }
           ],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "OnBeat",
+              "type": "boolean",
+              "value": false
+            }
+          ]
         },
         {
           "angle": 0,
@@ -4873,8 +4880,8 @@
           "name": "EndScreenBackground",
           "persistentUuid": "5bb92e8d-5cfb-4d81-90e7-25a7a05accb0",
           "width": 1278,
-          "x": -2,
-          "y": 0,
+          "x": 2,
+          "y": -3,
           "zOrder": 45,
           "numberProperties": [],
           "stringProperties": [],
@@ -6920,6 +6927,12 @@
             {
               "folded": true,
               "name": "shooting",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "OnBeat",
               "type": "boolean",
               "value": false
             }
@@ -12454,6 +12467,129 @@
               "parameters": [
                 "",
                 "\"Pausa\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Timer",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\"",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\"",
+                ">",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\"",
+                ">=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\""
               ]
             }
           ]
