@@ -1586,6 +1586,24 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/walter white/Happy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\walter white\\Happy.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/walter white/Angry.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\walter white\\Angry.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4638,7 +4656,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.749931172531225,
+        "zoomFactor": 0.6789100437067118,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6936,6 +6954,21 @@
           "x": 1574,
           "y": 405,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Walter",
+          "persistentUuid": "75204785-6cb4-4633-81ab-f346abda4a7e",
+          "width": 0,
+          "x": 1404,
+          "y": 699,
+          "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10022,6 +10055,114 @@
           "behaviors": []
         },
         {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Walter",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 1,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 1,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\walter white\\Happy.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 4,
+                            "y": 2
+                          },
+                          {
+                            "x": 25,
+                            "y": 2
+                          },
+                          {
+                            "x": 25,
+                            "y": 26
+                          },
+                          {
+                            "x": 4,
+                            "y": 26
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\walter white\\Angry.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 4,
+                            "y": 2
+                          },
+                          {
+                            "x": 25,
+                            "y": 2
+                          },
+                          {
+                            "x": 25,
+                            "y": 26
+                          },
+                          {
+                            "x": 4,
+                            "y": 26
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NewSprite",
@@ -12574,7 +12715,7 @@
                 "Player",
                 "\"OnBeat\"",
                 "<",
-                "1"
+                "1.5"
               ]
             }
           ],
@@ -12602,7 +12743,7 @@
                 "Player",
                 "\"OnBeat\"",
                 ">",
-                "2"
+                "2.5"
               ]
             }
           ],
@@ -12629,8 +12770,8 @@
               "parameters": [
                 "Player",
                 "\"OnBeat\"",
-                ">=",
-                "4"
+                ">",
+                "5"
               ]
             }
           ],
