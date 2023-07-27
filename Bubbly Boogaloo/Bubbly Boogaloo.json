@@ -1604,6 +1604,16 @@
         "name": "BubblyBogaloo_Assets\\walter white\\Angry.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "BubblyBogaloo_Assets/SFX/sound_level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\SFX\\sound_level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4656,7 +4666,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6789100437067118,
+        "zoomFactor": 0.9150393103732057,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6960,14 +6970,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
+          "customSize": true,
+          "depth": 0,
+          "height": 135,
+          "layer": "UI",
           "name": "Walter",
           "persistentUuid": "75204785-6cb4-4633-81ab-f346abda4a7e",
-          "width": 0,
-          "x": 1404,
-          "y": 699,
+          "width": 135,
+          "x": 1125,
+          "y": 531,
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
@@ -10065,19 +10076,19 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 1,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 1,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
           "animations": [
             {
-              "name": "",
+              "name": "idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -10119,7 +10130,19 @@
                           }
                         ]
                       ]
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "angry",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "BubblyBogaloo_Assets\\walter white\\Angry.png",
@@ -12701,6 +12724,28 @@
                 "Player",
                 "\"OnBeat\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\SFX\\sound_level.mp3",
+                "yes",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Walter",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -12728,6 +12773,16 @@
                 "Player",
                 "PlatformerObject",
                 "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Walter",
+                "=",
+                "0"
               ]
             }
           ]
@@ -12757,6 +12812,16 @@
                 "PlatformerObject",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Walter",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -12783,6 +12848,16 @@
               "parameters": [
                 "Player",
                 "\"OnBeat\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Walter",
+                "=",
+                "0"
               ]
             }
           ]
@@ -12860,7 +12935,7 @@
           "isLocked": false,
           "name": "EndScreen",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
