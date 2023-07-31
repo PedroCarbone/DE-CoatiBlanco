@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "E:\\Pedro\\DE-CoatiBlanco\\Build",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1614,6 +1614,51 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Freezed.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BubblyBogaloo_Assets/Player/Freezed.png\",\"extension\":\".png\"}",
+        "name": "BubblyBogaloo_Assets\\Player\\Freezed.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/angry.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "angry",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/angry2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "angry2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Freezed.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Freezed",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BubblyBogaloo_Assets/Player/Freezed2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BubblyBogaloo_Assets\\Player\\Freezed2.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1648,7 +1693,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7291666666666718,
+        "zoomFactor": 0.7791712547654626,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1754,13 +1799,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 47,
+          "height": 25,
           "layer": "",
           "name": "play",
           "persistentUuid": "28bbc173-96a9-4d7f-8046-5aafcb5a45cf",
-          "width": 321,
-          "x": 282,
-          "y": 582,
+          "width": 154,
+          "x": 364,
+          "y": 579,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1806,8 +1851,8 @@
           "name": "exit",
           "persistentUuid": "5e0f51ff-f4de-4e5a-8eea-9c542fdd9f58",
           "width": 0,
-          "x": 769,
-          "y": 572,
+          "x": 798,
+          "y": 579,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -2324,10 +2369,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Continue",
+          "string": "RESUME",
           "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "center",
-          "characterSize": 20,
+          "characterSize": 25,
           "color": {
             "b": 255,
             "g": 255,
@@ -2349,7 +2394,7 @@
           "string": "EXIT",
           "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "center",
-          "characterSize": 40,
+          "characterSize": 25,
           "color": {
             "b": 255,
             "g": 255,
@@ -2474,7 +2519,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Pausa",
+          "string": "PAUSE",
           "font": "BubblyBogaloo_Assets\\Menu\\font.ttf",
           "textAlignment": "left",
           "characterSize": 70,
@@ -2503,10 +2548,28 @@
           "actions": [
             {
               "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Pausa\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PopScene"
               },
               "parameters": [
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2"
               ]
             }
           ]
@@ -2661,31 +2724,17 @@
           "actions": [
             {
               "type": {
-                "value": "PlayMusic"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
                 "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
+                "2",
                 "yes",
-                "25",
+                "20",
                 ""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "ResetTimer"
@@ -2706,7 +2755,7 @@
               },
               "parameters": [
                 "",
-                "p"
+                "Escape"
               ]
             },
             {
@@ -2737,6 +2786,44 @@
               },
               "parameters": [
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "3",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\SFX\\sound_level.mp3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets\\Llora_Nuls.mp3"
               ]
             }
           ]
@@ -3821,14 +3908,24 @@
           "actions": [
             {
               "type": {
-                "value": "PlayMusic"
+                "value": "PlayMusicCanal"
               },
               "parameters": [
                 "",
                 "BubblyBogaloo_Assets\\Menu\\Music Menu.mp3",
+                "2",
                 "yes",
-                "25",
+                "20",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseMusicCanal"
+              },
+              "parameters": [
+                "",
+                "1"
               ]
             }
           ]
@@ -4666,7 +4763,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9150393103732057,
+        "zoomFactor": 1.0448452729511248,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4726,9 +4823,6 @@
             },
             {
               "name": "RightBoundary"
-            },
-            {
-              "name": "BoundaryJumpThrough"
             }
           ]
         }
@@ -4772,8 +4866,8 @@
           "name": "Player",
           "persistentUuid": "531d1c3f-aae2-413f-ba87-81f0b6673f1b",
           "width": 78,
-          "x": 234,
-          "y": 524,
+          "x": 205,
+          "y": 527,
           "zOrder": 6,
           "numberProperties": [
             {
@@ -4799,7 +4893,7 @@
           "name": "DoorParticles",
           "persistentUuid": "fb84a04d-cfeb-4e71-a07c-cd64c5b91f23",
           "width": 64.24380493164062,
-          "x": 2041.7562255859375,
+          "x": 1936.7562255859375,
           "y": 174.75619506835938,
           "zOrder": 2,
           "numberProperties": [],
@@ -4831,7 +4925,7 @@
           "name": "Platform4",
           "persistentUuid": "dac6a253-9929-4369-b079-5ea42e96d4da",
           "width": 50,
-          "x": 1864,
+          "x": 1759,
           "y": 287,
           "zOrder": 3,
           "numberProperties": [],
@@ -4842,13 +4936,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 928,
+          "height": 972,
           "layer": "",
           "name": "LeftBoundary",
           "persistentUuid": "78dd0ffa-b22f-47a8-9b36-ef6a432b1d1e",
-          "width": 135,
+          "width": 145,
           "x": 0,
-          "y": -256,
+          "y": -255,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -4878,7 +4972,7 @@
           "persistentUuid": "8f4f48ed-995c-4c89-b37c-a1e26bab5015",
           "width": 27.925533294677734,
           "x": 1423,
-          "y": 441,
+          "y": 466,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4892,8 +4986,8 @@
           "name": "Coin",
           "persistentUuid": "457309c4-eb4f-4740-a1d2-12e1d4b8dec5",
           "width": 27.925533294677734,
-          "x": 1028,
-          "y": -109,
+          "x": 1043,
+          "y": -79,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4908,7 +5002,7 @@
           "persistentUuid": "edd62113-fad1-4248-8d10-0ec8724b329b",
           "width": 27.925533294677734,
           "x": 1093,
-          "y": 460,
+          "y": 510,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4923,7 +5017,7 @@
           "persistentUuid": "e6379e27-54c7-4edf-9720-93935bd3a6df",
           "width": 27.925533294677734,
           "x": 1332,
-          "y": 173,
+          "y": 243,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5016,7 +5110,7 @@
           "persistentUuid": "c609b5d6-28cf-4684-877a-4c2b7f8ec613",
           "width": 27.925533294677734,
           "x": 620,
-          "y": 422,
+          "y": 452,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5047,7 +5141,7 @@
           "persistentUuid": "b275a1c4-8c3e-490a-8bd8-37095361c767",
           "width": 27.925533294677734,
           "x": 837,
-          "y": 139,
+          "y": 184,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5062,7 +5156,7 @@
           "persistentUuid": "ebcad3a0-b17e-44a4-bb58-1db4553c72ca",
           "width": 27.925533294677734,
           "x": 533,
-          "y": 422,
+          "y": 452,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5123,7 +5217,7 @@
           "name": "Portal",
           "persistentUuid": "7efbc01f-ebde-481a-8ed2-824eb6c891f2",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": 112,
           "zOrder": 2,
           "numberProperties": [],
@@ -5264,7 +5358,7 @@
           "name": "NewTiledSprite",
           "persistentUuid": "41454378-4e84-4267-8129-3577085b22ba",
           "width": 135,
-          "x": 2063,
+          "x": 1958,
           "y": -256,
           "zOrder": 67,
           "numberProperties": [],
@@ -5504,7 +5598,7 @@
           "name": "Platform1",
           "persistentUuid": "c7e0708e-1a6b-4f6d-a2f2-80515c4953dc",
           "width": 50,
-          "x": 2063,
+          "x": 1958,
           "y": -294,
           "zOrder": 0,
           "numberProperties": [],
@@ -5616,22 +5710,7 @@
           "persistentUuid": "1463f7e2-39f1-482e-a4a9-84ed2ec600ba",
           "width": 27.925533294677734,
           "x": 450,
-          "y": 422,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 35,
-          "layer": "",
-          "name": "Coin",
-          "persistentUuid": "2700e299-2c43-4d40-b233-98514fbfb5c2",
-          "width": 27.925533294677734,
-          "x": 1789,
-          "y": 558,
+          "y": 452,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5667,7 +5746,7 @@
           "name": "Monster",
           "persistentUuid": "581e5c1f-5fac-49a9-a27a-389fdac2e5ef",
           "width": 70,
-          "x": 1809,
+          "x": 1704,
           "y": 178,
           "zOrder": 5,
           "numberProperties": [
@@ -5688,7 +5767,7 @@
           "name": "Platform4",
           "persistentUuid": "f0401c66-4b13-42dd-a29b-97fa2128e732",
           "width": 50,
-          "x": 2014,
+          "x": 1909,
           "y": 437,
           "zOrder": 3,
           "numberProperties": [],
@@ -5704,7 +5783,7 @@
           "name": "Platform4",
           "persistentUuid": "1facae47-bb81-43a8-a64f-07a903d46d1b",
           "width": 50,
-          "x": 1964,
+          "x": 1859,
           "y": 387,
           "zOrder": 3,
           "numberProperties": [],
@@ -5720,7 +5799,7 @@
           "name": "Platform4",
           "persistentUuid": "f36a8a0a-45bf-4386-8e36-06a5e937911f",
           "width": 50,
-          "x": 2014,
+          "x": 1909,
           "y": 237,
           "zOrder": 3,
           "numberProperties": [],
@@ -5736,7 +5815,7 @@
           "name": "Platform4",
           "persistentUuid": "3a235485-e269-4a1f-af67-e92f986ae691",
           "width": 50,
-          "x": 1864,
+          "x": 1759,
           "y": 237,
           "zOrder": 3,
           "numberProperties": [],
@@ -5752,7 +5831,7 @@
           "name": "Platform4",
           "persistentUuid": "3eb0c404-2c66-4d51-b79c-da4708a8db59",
           "width": 50,
-          "x": 1814,
+          "x": 1709,
           "y": 237,
           "zOrder": 3,
           "numberProperties": [],
@@ -5768,7 +5847,7 @@
           "name": "Platform4",
           "persistentUuid": "57af8fd7-08f0-4e21-ba08-f136033c10ea",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": -138,
           "zOrder": 3,
           "numberProperties": [],
@@ -5784,7 +5863,7 @@
           "name": "Platform4",
           "persistentUuid": "e4e5d1e6-577a-4649-9456-f24351f492c4",
           "width": 50,
-          "x": 1964,
+          "x": 1859,
           "y": 237,
           "zOrder": 3,
           "numberProperties": [],
@@ -5800,7 +5879,7 @@
           "name": "Platform4",
           "persistentUuid": "635dd437-9236-4ce7-9fb3-1ebfae71374b",
           "width": 50,
-          "x": 1914,
+          "x": 1809,
           "y": 337,
           "zOrder": 3,
           "numberProperties": [],
@@ -5816,7 +5895,7 @@
           "name": "Platform4",
           "persistentUuid": "af275cdc-6b8c-4c96-be25-2fcbae3539f9",
           "width": 50,
-          "x": 2014,
+          "x": 1909,
           "y": 287,
           "zOrder": 3,
           "numberProperties": [],
@@ -5832,7 +5911,7 @@
           "name": "Platform4",
           "persistentUuid": "8bf58975-77f2-4c6e-b3cd-cdbbbefa5147",
           "width": 50,
-          "x": 1964,
+          "x": 1859,
           "y": 287,
           "zOrder": 3,
           "numberProperties": [],
@@ -5848,7 +5927,7 @@
           "name": "Platform4",
           "persistentUuid": "d8dd74f7-b4c2-453c-8932-494236c96d13",
           "width": 50,
-          "x": 1914,
+          "x": 1809,
           "y": 287,
           "zOrder": 3,
           "numberProperties": [],
@@ -5864,7 +5943,7 @@
           "name": "Platform4",
           "persistentUuid": "afad5988-5d39-42db-96a5-28ef4faf6e69",
           "width": 50,
-          "x": 1964,
+          "x": 1859,
           "y": 337,
           "zOrder": 3,
           "numberProperties": [],
@@ -5880,7 +5959,7 @@
           "name": "Platform4",
           "persistentUuid": "0c2e4855-560a-4ab6-b312-fc25ba8cf662",
           "width": 50,
-          "x": 2014,
+          "x": 1909,
           "y": 337,
           "zOrder": 3,
           "numberProperties": [],
@@ -5896,7 +5975,7 @@
           "name": "Portal",
           "persistentUuid": "01c49dc3-040f-494d-893d-246623a06579",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": 112,
           "zOrder": 2,
           "numberProperties": [],
@@ -5912,7 +5991,7 @@
           "name": "Platform4",
           "persistentUuid": "65b05070-5ee0-487c-9442-770277fd15f7",
           "width": 50,
-          "x": 1914,
+          "x": 1809,
           "y": 237,
           "zOrder": 3,
           "numberProperties": [],
@@ -5928,7 +6007,7 @@
           "name": "Portal",
           "persistentUuid": "c3ff59f1-aaca-466d-a39f-d30493f159c4",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": 206,
           "zOrder": 2,
           "numberProperties": [],
@@ -5944,7 +6023,7 @@
           "name": "Portal",
           "persistentUuid": "12063626-0f94-4b10-9fcc-9a03528314d9",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": 206,
           "zOrder": 2,
           "numberProperties": [],
@@ -5960,7 +6039,7 @@
           "name": "Platform4",
           "persistentUuid": "f2213da8-be51-40d3-938d-f4b0b9638d9b",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": 138,
           "zOrder": 5,
           "numberProperties": [],
@@ -5976,7 +6055,7 @@
           "name": "Platform4",
           "persistentUuid": "875b6eec-2bbe-4a8d-89d1-310e6e45c7f2",
           "width": 52,
-          "x": 2013,
+          "x": 1908,
           "y": 88,
           "zOrder": 5,
           "numberProperties": [],
@@ -5992,7 +6071,7 @@
           "name": "Portal",
           "persistentUuid": "b04dd6c5-9b0e-45d8-81a9-ec72c7812ed6",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": 159,
           "zOrder": 2,
           "numberProperties": [],
@@ -6008,7 +6087,7 @@
           "name": "Portal",
           "persistentUuid": "5ec8cead-381a-4a98-868a-6250b05342a4",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": 159,
           "zOrder": 2,
           "numberProperties": [],
@@ -6024,7 +6103,7 @@
           "name": "Platform4",
           "persistentUuid": "87b18c32-8342-457d-b55e-5c68d987b636",
           "width": 50,
-          "x": 2014,
+          "x": 1909,
           "y": 387,
           "zOrder": 3,
           "numberProperties": [],
@@ -6040,7 +6119,7 @@
           "name": "Platform4",
           "persistentUuid": "06610a87-a4aa-4905-bc0e-08e0ece4fd1d",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": 188,
           "zOrder": 5,
           "numberProperties": [],
@@ -6157,7 +6236,7 @@
           "name": "Platform3",
           "persistentUuid": "c002bdd1-f6ee-4405-ad40-1cd5b533b46e",
           "width": 50,
-          "x": 1045,
+          "x": 1060,
           "y": -39,
           "zOrder": 3,
           "numberProperties": [],
@@ -6285,7 +6364,7 @@
           "name": "Platform4",
           "persistentUuid": "37223232-85ee-44ea-b233-1da7b2a45b3f",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": -138,
           "zOrder": 3,
           "numberProperties": [],
@@ -6301,7 +6380,7 @@
           "name": "Platform4",
           "persistentUuid": "8b084a02-baf8-4622-94d5-5777f9740e41",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": -37,
           "zOrder": 3,
           "numberProperties": [],
@@ -6317,7 +6396,7 @@
           "name": "Platform4",
           "persistentUuid": "19517178-0642-4f75-9678-fb44d5e4dc0b",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": -37,
           "zOrder": 3,
           "numberProperties": [],
@@ -6333,7 +6412,7 @@
           "name": "Platform4",
           "persistentUuid": "92c49e3b-7375-4d76-a219-f9dec0c58cb3",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": 13,
           "zOrder": 3,
           "numberProperties": [],
@@ -6349,7 +6428,7 @@
           "name": "Platform4",
           "persistentUuid": "3fba1124-3cb6-4b4d-9d5f-e2a88844bde3",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": 13,
           "zOrder": 3,
           "numberProperties": [],
@@ -6365,7 +6444,7 @@
           "name": "Platform4",
           "persistentUuid": "86f007aa-16c4-4517-a31a-9c27d985d8ab",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": 63,
           "zOrder": 3,
           "numberProperties": [],
@@ -6381,7 +6460,7 @@
           "name": "Platform4",
           "persistentUuid": "ef1ee39b-0326-4fdf-bf6d-cc3db7afd555",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": 63,
           "zOrder": 3,
           "numberProperties": [],
@@ -6397,7 +6476,7 @@
           "name": "Platform4",
           "persistentUuid": "bdba4286-9300-4e22-a574-ce506698f60a",
           "width": 50,
-          "x": 2013,
+          "x": 1908,
           "y": -87,
           "zOrder": 3,
           "numberProperties": [],
@@ -6413,7 +6492,7 @@
           "name": "Platform4",
           "persistentUuid": "c3ef41c5-5000-419e-87da-0e338aef055a",
           "width": 50,
-          "x": 1939,
+          "x": 1834,
           "y": -87,
           "zOrder": 3,
           "numberProperties": [],
@@ -6429,7 +6508,7 @@
           "name": "Platform4",
           "persistentUuid": "4428accc-bd5f-445a-b8af-9a017d7969a9",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": -138,
           "zOrder": 3,
           "numberProperties": [],
@@ -6445,7 +6524,7 @@
           "name": "Platform4",
           "persistentUuid": "d85a053b-c81a-4d20-9677-05170f9e06e4",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": -87,
           "zOrder": 3,
           "numberProperties": [],
@@ -6461,7 +6540,7 @@
           "name": "Platform4",
           "persistentUuid": "a9a4cc28-5d65-459e-b6ce-a5d39efb8cad",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": -37,
           "zOrder": 3,
           "numberProperties": [],
@@ -6477,7 +6556,7 @@
           "name": "Platform4",
           "persistentUuid": "75f0a937-3e72-4e05-b5ec-0cf5d4aff825",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": 13,
           "zOrder": 3,
           "numberProperties": [],
@@ -6493,7 +6572,7 @@
           "name": "Platform4",
           "persistentUuid": "e66ad58e-04d2-4939-9f70-73cd397a5b62",
           "width": 50,
-          "x": 1989,
+          "x": 1884,
           "y": 63,
           "zOrder": 3,
           "numberProperties": [],
@@ -6557,7 +6636,7 @@
           "persistentUuid": "c559a0bc-8645-4589-bc50-ce9009ed9da8",
           "width": 27.925533294677734,
           "x": 1584,
-          "y": -25,
+          "y": -5,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6588,7 +6667,7 @@
           "persistentUuid": "8c6c12e8-2178-4df0-907e-0f1ceda3226d",
           "width": 27.925533294677734,
           "x": 1484,
-          "y": -95,
+          "y": -75,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6603,22 +6682,7 @@
           "persistentUuid": "0ab3c067-efca-43ce-8697-2ce071246b54",
           "width": 27.925533294677734,
           "x": 1503,
-          "y": 472,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 35,
-          "layer": "",
-          "name": "Coin",
-          "persistentUuid": "48d9f73c-e730-4403-8bc4-d7850e47a73d",
-          "width": 27.925533294677734,
-          "x": 1750,
-          "y": 142,
+          "y": 482,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6633,7 +6697,7 @@
           "persistentUuid": "b33f00ce-a618-4f51-85d0-91b93f9c7679",
           "width": 27.925533294677734,
           "x": 1670,
-          "y": 54,
+          "y": 74,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6680,7 +6744,7 @@
           "name": "Platform3",
           "persistentUuid": "541c8d0d-fdec-432a-8827-4805d346c7c3",
           "width": 50,
-          "x": 1822,
+          "x": 1765,
           "y": 470,
           "zOrder": 3,
           "numberProperties": [],
@@ -6696,7 +6760,7 @@
           "name": "Platform3",
           "persistentUuid": "4b3cdba9-b50f-42c6-85c9-b2ae6443171a",
           "width": 50,
-          "x": 1872,
+          "x": 1815,
           "y": 470,
           "zOrder": 3,
           "numberProperties": [],
@@ -6712,7 +6776,7 @@
           "name": "Platform3",
           "persistentUuid": "5f4e1fee-3189-4a9c-b658-bc00c8a120f3",
           "width": 50,
-          "x": 1772,
+          "x": 1715,
           "y": 470,
           "zOrder": 3,
           "numberProperties": [],
@@ -6728,7 +6792,7 @@
           "name": "Platform3",
           "persistentUuid": "d8511d0c-61b5-4552-a57e-27233d1a5dc6",
           "width": 50,
-          "x": 945,
+          "x": 960,
           "y": -39,
           "zOrder": 3,
           "numberProperties": [],
@@ -6744,7 +6808,7 @@
           "name": "Platform3",
           "persistentUuid": "e7a434a7-445d-47dd-9517-9215a5deab55",
           "width": 50,
-          "x": 995,
+          "x": 1010,
           "y": -39,
           "zOrder": 3,
           "numberProperties": [],
@@ -6759,8 +6823,8 @@
           "name": "Coin",
           "persistentUuid": "c58ec21a-e1e1-4088-a95a-680884c09b43",
           "width": 27.925533294677734,
-          "x": 973,
-          "y": -109,
+          "x": 988,
+          "y": -79,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6823,7 +6887,7 @@
           "persistentUuid": "482d2c50-0d7a-450e-8f1f-1980694b048e",
           "width": 27.925533294677734,
           "x": 408,
-          "y": 23,
+          "y": 58,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6838,7 +6902,7 @@
           "persistentUuid": "fada39d0-c283-42a1-915b-e172a95b6d61",
           "width": 27.925533294677734,
           "x": 353,
-          "y": 23,
+          "y": 58,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6853,7 +6917,7 @@
           "persistentUuid": "1078711c-a02c-46f2-9c17-c871fe0cba0f",
           "width": 27.925533294677734,
           "x": 682,
-          "y": -117,
+          "y": -82,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6868,7 +6932,7 @@
           "persistentUuid": "5570221a-d75c-4a37-a684-e639c4b9fdbe",
           "width": 27.925533294677734,
           "x": 627,
-          "y": -117,
+          "y": -82,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6931,7 +6995,7 @@
           "persistentUuid": "69dc1868-5184-4979-8c15-587e0a0de23a",
           "width": 27.925533294677734,
           "x": 1578,
-          "y": 523,
+          "y": 528,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6946,7 +7010,7 @@
           "persistentUuid": "40f8b3a1-4145-45aa-9b11-e678a2c155d9",
           "width": 27.925533294677734,
           "x": 1662,
-          "y": 555,
+          "y": 565,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6983,6 +7047,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 888,
+          "layer": "",
+          "name": "LeftBoundary2",
+          "persistentUuid": "731bda80-c82a-4bf3-a38f-4cb2f350faa5",
+          "width": 45,
+          "x": 161,
+          "y": -59,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7008,6 +7088,12 @@
             {
               "folded": true,
               "name": "OnBeat",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "freezed",
               "type": "boolean",
               "value": false
             }
@@ -7177,39 +7263,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7233,39 +7299,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7301,35 +7347,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 9.5
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7353,39 +7383,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 16,
-                            "y": 10
-                          },
-                          {
-                            "x": 15,
-                            "y": 14
-                          },
-                          {
-                            "x": 15,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7421,39 +7431,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 7
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 13,
-                            "y": 4
-                          },
-                          {
-                            "x": 15,
-                            "y": 10
-                          },
-                          {
-                            "x": 15,
-                            "y": 14
-                          },
-                          {
-                            "x": 15,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 0.5,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7477,39 +7467,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 7
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 13,
-                            "y": 4
-                          },
-                          {
-                            "x": 15,
-                            "y": 10
-                          },
-                          {
-                            "x": 15,
-                            "y": 14
-                          },
-                          {
-                            "x": 15,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 0.5,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7545,39 +7515,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7601,39 +7551,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7657,39 +7587,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7713,39 +7623,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9,
-                            "y": 3
-                          },
-                          {
-                            "x": 12,
-                            "y": 3
-                          },
-                          {
-                            "x": 15,
-                            "y": 4
-                          },
-                          {
-                            "x": 17,
-                            "y": 10
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -7781,39 +7671,104 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 4,
-                            "y": 6
+                            "x": 2,
+                            "y": 8
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 18,
+                            "y": 8
                           },
                           {
-                            "x": 9.5,
-                            "y": 1
-                          },
-                          {
-                            "x": 12,
-                            "y": 2
-                          },
-                          {
-                            "x": 15,
-                            "y": 3
-                          },
-                          {
-                            "x": 16,
-                            "y": 4
-                          },
-                          {
-                            "x": 16,
-                            "y": 14
-                          },
-                          {
-                            "x": 16,
+                            "x": 18,
                             "y": 17
                           },
                           {
-                            "x": 4,
+                            "x": 2,
+                            "y": 17
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Freezed",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Freezed",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 8
+                          },
+                          {
+                            "x": 18,
+                            "y": 8
+                          },
+                          {
+                            "x": 18,
+                            "y": 17
+                          },
+                          {
+                            "x": 2,
+                            "y": 17
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BubblyBogaloo_Assets\\Player\\Freezed2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 8
+                          },
+                          {
+                            "x": 18,
+                            "y": 8
+                          },
+                          {
+                            "x": 18,
+                            "y": 17
+                          },
+                          {
+                            "x": 2,
                             "y": 17
                           }
                         ]
@@ -9195,18 +9150,6 @@
         },
         {
           "assetStoreId": "",
-          "height": 78,
-          "name": "Clouds",
-          "tags": "",
-          "texture": "assets\\Clouds.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 960,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
           "bold": true,
           "italic": false,
           "name": "ScoreText",
@@ -9289,16 +9232,86 @@
                             "y": 0
                           },
                           {
-                            "x": 16,
+                            "x": 32,
                             "y": 0
                           },
                           {
-                            "x": 16,
-                            "y": 16
+                            "x": 32,
+                            "y": 32
                           },
                           {
                             "x": 0,
-                            "y": 16
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "LeftBoundary2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": true,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "assets\\boundary",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.00001,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\boundary.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
                           }
                         ]
                       ]
@@ -9423,98 +9436,6 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets\\boundary.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "BoundaryJumpThrough",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\boundary.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Moon",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\Moon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10141,11 +10062,12 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "BubblyBogaloo_Assets\\walter white\\Angry.png",
+                      "image": "angry2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10388,124 +10310,6 @@
                 "textR": 0
               },
               "comment": "Note: Keyboard controls are provided by the Platformer behavior automatically"
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "Mobile Touchscreen Controls",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "SystemInfo::HasTouchScreen"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "SpriteMultitouchJoystick::MultitouchButton::IsPressed"
-                          },
-                          "parameters": [
-                            "JumpButton",
-                            "MultitouchButton",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ChangeColor"
-                          },
-                          "parameters": [
-                            "JumpButton",
-                            "\"74;74;74\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "SpriteMultitouchJoystick::MultitouchButton::IsPressed"
-                          },
-                          "parameters": [
-                            "JumpButton",
-                            "MultitouchButton",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ChangeColor"
-                          },
-                          "parameters": [
-                            "JumpButton",
-                            "\"255;255;255\""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "SystemInfo::HasTouchScreen"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "MobileControls",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "parameters": []
             }
           ],
           "parameters": []
@@ -10676,7 +10480,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Use checkpoints to save progress",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -12051,33 +11854,6 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\Llora_Nuls.mp3",
-                        "yes",
-                        "20",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
                     "b": 109,
@@ -12111,36 +11887,6 @@
                         "BackgroundPlants",
                         "=",
                         "CameraBorderLeft() / 3 + 780"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreX"
-                      },
-                      "parameters": [
-                        "Clouds",
-                        "=",
-                        "CameraBorderLeft()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::Width"
-                      },
-                      "parameters": [
-                        "Clouds",
-                        "=",
-                        "CameraWidth()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::XOffset"
-                      },
-                      "parameters": [
-                        "Clouds",
-                        "=",
-                        "CameraBorderLeft() * 1.2"
                       ]
                     }
                   ]
@@ -12357,6 +12103,17 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "5"
+                  ]
+                },
                 {
                   "type": {
                     "value": "KeyPressed"
@@ -12651,7 +12408,7 @@
               },
               "parameters": [
                 "",
-                "p"
+                "Escape"
               ]
             },
             {
@@ -12678,6 +12435,15 @@
             },
             {
               "type": {
+                "value": "PauseObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PushScene"
               },
               "parameters": [
@@ -12697,11 +12463,17 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Timer",
+          "name": "Timer al comenzar la escena",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
           "parameters": []
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -12727,62 +12499,25 @@
             },
             {
               "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "BubblyBogaloo_Assets\\SFX\\sound_level.mp3",
-                "yes",
-                "50",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Walter",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"OnBeat\"",
-                "<",
-                "1.5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::IgnoreDefaultControls"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject",
-                "no"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Walter",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\SFX\\sound_level.mp3",
+                "1",
+                "yes",
+                "20",
+                ""
               ]
             }
           ]
@@ -12798,8 +12533,14 @@
                 "Player",
                 "\"OnBeat\"",
                 ">",
-                "2.5"
+                "2"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -12822,6 +12563,28 @@
                 "=",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "freezed",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Llora_Nuls.mp3",
+                "no",
+                "20",
+                ""
+              ]
             }
           ]
         },
@@ -12836,18 +12599,25 @@
                 "Player",
                 "\"OnBeat\"",
                 ">",
-                "5"
+                "4"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ResetObjectTimer"
+                "value": "PlatformBehavior::IgnoreDefaultControls"
               },
               "parameters": [
                 "Player",
-                "\"OnBeat\""
+                "PlatformerObject",
+                "no"
               ]
             },
             {
@@ -12859,8 +12629,202 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "freezed",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Llora_Nuls.mp3",
+                "no",
+                "20",
+                ""
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\"",
+                ">",
+                "4.000001"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\""
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Timer al reanudarse la escena",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustResumed"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "UnPauseObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"OnBeat\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "BubblyBogaloo_Assets\\SFX\\sound_level.mp3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Character freezed",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "freezed",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "freezed",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -12935,7 +12899,7 @@
           "isLocked": false,
           "name": "EndScreen",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         }
